@@ -1,0 +1,19 @@
+{
+  "name": "https-proxy-agent",
+  "version": "5.0.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/https-proxy-agent/5.0.1",
+  "artifact": "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz",
+  "sha256": "6da16fb44331f2e5d30bd21bf880aa934c1ad4fe7da7187910ef2b2509712019",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_README_LICENSE_CAPTURED",
+  "registry_metadata_sha256": "9ed34fec5e4151933a940a610a49aa084fbf625f5f43fd5d841f4ecc64e0d08b",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-https-proxy-agent-5.0.1/README-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

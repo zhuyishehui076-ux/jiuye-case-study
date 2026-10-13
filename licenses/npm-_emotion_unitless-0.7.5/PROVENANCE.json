@@ -1,0 +1,21 @@
+{
+  "name": "@emotion/unitless",
+  "version": "0.7.5",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40emotion%2Funitless/0.7.5",
+  "artifact": "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.7.5.tgz",
+  "sha256": "9e56d94d91666411e8c87e5ad8e85a63a0f93539d45666fe799bddda9c88ca64",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "2e94ffa5d6bdb4db670a3f09090389802111bafc142143cf73f1d9fae59c2534",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_emotion_unitless-0.7.5/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

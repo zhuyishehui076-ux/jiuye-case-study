@@ -1,0 +1,23 @@
+{
+  "name": "tzdata",
+  "version": "2026.3",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/tzdata/2026.3/json",
+  "artifact": "https://files.pythonhosted.org/packages/e5/6d/b53b99a9f2766d095985947a5782f1702cabb129a34f7a802d7197af832f/tzdata-2026.3-py2.py3-none-any.whl",
+  "sha256": "dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931",
+  "original_license_paths": [
+    "tzdata-2026.3.dist-info/licenses/LICENSE",
+    "tzdata-2026.3.dist-info/licenses/licenses/LICENSE_APACHE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "Apache-2.0",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "b8f42880d2cf78c536e066955964b94ce4d7d4c1b3ddfcfd190e8466ccafcedc",
+  "publisher_declared_license": "Apache-2.0",
+  "referenced_license_texts": [
+    "licenses/pypi-tzdata-2026.3/01-LICENSE.txt",
+    "licenses/pypi-tzdata-2026.3/02-LICENSE_APACHE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

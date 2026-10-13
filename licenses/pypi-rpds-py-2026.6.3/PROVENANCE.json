@@ -1,0 +1,21 @@
+{
+  "name": "rpds-py",
+  "version": "2026.6.3",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/rpds-py/2026.6.3/json",
+  "artifact": "https://files.pythonhosted.org/packages/f2/b7/b7a1695d7af36f521fb11e80d6d3adbd744f73b921859bd3c2a2c0dc706f/rpds_py-2026.6.3-cp311-cp311-win_amd64.whl",
+  "sha256": "2c54a076ca4d370980ab57bc0e31df57bbe8d41340436a90ef8b1219a3cbb127",
+  "original_license_paths": [
+    "rpds_py-2026.6.3.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "c791bb0eaf9f18668ca978bd500d8dd8e25cdf692cf5bc92229d1c2854e8d852",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-rpds-py-2026.6.3/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

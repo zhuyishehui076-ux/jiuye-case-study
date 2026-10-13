@@ -1,0 +1,21 @@
+{
+  "name": "asynckit",
+  "version": "0.4.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/asynckit/0.4.0",
+  "artifact": "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz",
+  "sha256": "8c254f30f70792645042e4d71f590ec49f8e386a475772f7430c73b964b57dcf",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "3c9e79d30248376864101d875231763bd421bf97bfff630cae0ce04b47bd80c0",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-asynckit-0.4.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

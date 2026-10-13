@@ -1,0 +1,19 @@
+{
+  "name": "@esbuild/android-arm",
+  "version": "0.25.12",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40esbuild%2Fandroid-arm/0.25.12",
+  "artifact": "https://registry.npmjs.org/@esbuild/android-arm/-/android-arm-0.25.12.tgz",
+  "sha256": "5aea75886f091b07287ac357a492bcbbf633532381b31ba71611955faada3c7e",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "bf15fa389b5c66753751f16e29b208559ab665656da2887e1ad94366dd1542c2",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-esbuild-0.25.12/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

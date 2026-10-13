@@ -1,0 +1,21 @@
+{
+  "name": "iniconfig",
+  "version": "2.3.1",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/iniconfig/2.3.1/json",
+  "artifact": "https://files.pythonhosted.org/packages/56/43/4ca9e49d27a1fcf6bece6f6aec0ea46bb9112489b93d4b688fb415457bdb/iniconfig-2.3.1-py3-none-any.whl",
+  "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+  "original_license_paths": [
+    "iniconfig-2.3.1.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "ab4d5df71d2a4f01a0eb418d7809bb22dca3293991a369309f068c07c1471557",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-iniconfig-2.3.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

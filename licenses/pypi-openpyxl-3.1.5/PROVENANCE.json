@@ -1,0 +1,21 @@
+{
+  "name": "openpyxl",
+  "version": "3.1.5",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/openpyxl/3.1.5/json",
+  "artifact": "https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl",
+  "sha256": "5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2",
+  "original_license_paths": [
+    "openpyxl-3.1.5.dist-info/LICENCE.rst"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "6a922b57aebf0a54ec276b48bab917fa6684a5822e2d40a465972098d46be12e",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-openpyxl-3.1.5/01-LICENCE.rst.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

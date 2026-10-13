@@ -1,0 +1,21 @@
+{
+  "name": "escalade",
+  "version": "3.2.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/escalade/3.2.0",
+  "artifact": "https://registry.npmjs.org/escalade/-/escalade-3.2.0.tgz",
+  "sha256": "ba2755afc0e6c6705326711fd218ebe107a527eccbd6485155fde98ed000bee7",
+  "original_license_paths": [
+    "package/license"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "957d664a767c837a52291d1687cffb3e024b2f9ea08a4f0ece6c6517ff012269",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-escalade-3.2.0/01-license.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

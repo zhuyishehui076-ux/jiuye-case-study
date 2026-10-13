@@ -1,0 +1,19 @@
+{
+  "name": "@rollup/rollup-darwin-x64",
+  "version": "4.62.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rollup%2Frollup-darwin-x64/4.62.2",
+  "artifact": "https://registry.npmjs.org/@rollup/rollup-darwin-x64/-/rollup-darwin-x64-4.62.2.tgz",
+  "sha256": "9c5a5a78642d0245d8cfb901f3798fafb505e01f16e15987c49533135997b77a",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "1ad2dc83b62328d626aea03a345f5afbae48e868ef0afb48c7a5a429ab3b6142",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rollup-4.62.2/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

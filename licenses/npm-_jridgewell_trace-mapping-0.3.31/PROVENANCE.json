@@ -1,0 +1,21 @@
+{
+  "name": "@jridgewell/trace-mapping",
+  "version": "0.3.31",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40jridgewell%2Ftrace-mapping/0.3.31",
+  "artifact": "https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz",
+  "sha256": "c64c71a119630d5abe8246889edf334b2ca9ddad094e20d623332956b1453ccf",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "0a92d9d204cf3f795c26cda50ad692e6cc537beb508989209d58996fbfd3d358",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_jridgewell_trace-mapping-0.3.31/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "classnames",
+  "version": "2.5.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/classnames/2.5.1",
+  "artifact": "https://registry.npmjs.org/classnames/-/classnames-2.5.1.tgz",
+  "sha256": "6c9e10fc21a14499b74bfe1e8e8dd7a6152da02fb575c3ffd3cd71f67390ebf1",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "88e7e0edf5b6acf7bd94a9d24c37639a802f2a2d83dcdefcc809aa0020fc76c2",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-classnames-2.5.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

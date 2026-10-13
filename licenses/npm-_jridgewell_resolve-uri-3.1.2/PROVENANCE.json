@@ -1,0 +1,21 @@
+{
+  "name": "@jridgewell/resolve-uri",
+  "version": "3.1.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40jridgewell%2Fresolve-uri/3.1.2",
+  "artifact": "https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz",
+  "sha256": "db52f9f62558baab13353dd39e3200750fc33e6a129a575b46226f493776e230",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "4179096ded7325b5e30ff15c1c97bea61e46c6ea8ebc7809f3fd380d70cc477a",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_jridgewell_resolve-uri-3.1.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

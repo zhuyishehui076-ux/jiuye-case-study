@@ -1,0 +1,21 @@
+{
+  "name": "yallist",
+  "version": "3.1.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/yallist/3.1.1",
+  "artifact": "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz",
+  "sha256": "50f14ae6cfe8360cb2259ba3e93305e069036f13251d69d3cbee9e1d4775ca04",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "ISC",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "08770f6296f9c6dcbfb4e9833720337927dd022688b46a395b03800429cd8c1f",
+  "publisher_declared_license": "ISC",
+  "referenced_license_texts": [
+    "licenses/npm-yallist-3.1.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

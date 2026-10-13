@@ -1,0 +1,21 @@
+{
+  "name": "pytest",
+  "version": "8.3.4",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/pytest/8.3.4/json",
+  "artifact": "https://files.pythonhosted.org/packages/11/92/76a1c94d3afee238333bc0a42b82935dd8f9cf8ce9e336ff87ee14d9e1cf/pytest-8.3.4-py3-none-any.whl",
+  "sha256": "50e16d954148559c9a74109af1eaf0c945ba2d8f30f0a3d3335edde19788b6f6",
+  "original_license_paths": [
+    "pytest-8.3.4.dist-info/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "ee4dfcbfc9111ce832c68dc8fd51b0366b77fcad14bfcf3dbe920f6348cb38e6",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-pytest-8.3.4/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

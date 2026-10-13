@@ -1,0 +1,21 @@
+{
+  "name": "rc-dialog",
+  "version": "9.6.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-dialog/9.6.0",
+  "artifact": "https://registry.npmjs.org/rc-dialog/-/rc-dialog-9.6.0.tgz",
+  "sha256": "8a6394d13dfb8a833731034846e1c633152ad5cfc3bd8147598a43af1a6c9041",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "2d9240e41fed611ff047dd5d8059b02e0fc56cc2683a73ee8b702c1c832a7db6",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-dialog-9.6.0/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

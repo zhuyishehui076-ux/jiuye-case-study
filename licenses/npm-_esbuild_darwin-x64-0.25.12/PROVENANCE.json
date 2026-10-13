@@ -1,0 +1,19 @@
+{
+  "name": "@esbuild/darwin-x64",
+  "version": "0.25.12",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40esbuild%2Fdarwin-x64/0.25.12",
+  "artifact": "https://registry.npmjs.org/@esbuild/darwin-x64/-/darwin-x64-0.25.12.tgz",
+  "sha256": "bf56cdf7b330a8605395ee13de805c784c7346d0802c7cced8490b4bfac2291a",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "c8c781af60dcc1f9e212c49ef6f2467173312d92face7c37569a9335711773e6",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-esbuild-0.25.12/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

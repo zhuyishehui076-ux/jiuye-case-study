@@ -1,0 +1,17 @@
+{
+  "name": "toggle-selection",
+  "version": "1.0.6",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/toggle-selection/1.0.6",
+  "artifact": "https://registry.npmjs.org/toggle-selection/-/toggle-selection-1.0.6.tgz",
+  "sha256": "c4537a15bc273c755ab6dcd8df8de87df05dccc7e11190c0c25d13e7b368172b",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "PUBLISHER_EXACT_METADATA_LICENSE_ONLY",
+  "registry_metadata_sha256": "55ec032a15b2fe7eb7532a22f198a2e5b868071e21875dae725eceb692a5a655",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [],
+  "license_text_gap": "Upstream LICENSE lookup stopped without retry: HTTP Error 404: Not Found",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "attrs",
+  "version": "26.1.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/attrs/26.1.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl",
+  "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+  "original_license_paths": [
+    "attrs-26.1.0.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "a882bf941fb4a0bb748d0194df544121cc130f5fb15a710ab6b804c17d2899b7",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-attrs-26.1.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

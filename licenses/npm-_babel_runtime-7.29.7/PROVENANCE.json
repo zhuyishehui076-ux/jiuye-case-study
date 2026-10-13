@@ -1,0 +1,21 @@
+{
+  "name": "@babel/runtime",
+  "version": "7.29.7",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40babel%2Fruntime/7.29.7",
+  "artifact": "https://registry.npmjs.org/@babel/runtime/-/runtime-7.29.7.tgz",
+  "sha256": "4d7f1bd502a1a64d47625cc738d13284865f0666d2ed01f244de0adf05b69aa5",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "6ae4e1d53f5766c0326bd0ee6f5be04707317eb63f3235cfa6d053c2815b5b0d",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_babel_runtime-7.29.7/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

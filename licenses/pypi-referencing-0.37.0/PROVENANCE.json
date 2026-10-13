@@ -1,0 +1,21 @@
+{
+  "name": "referencing",
+  "version": "0.37.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/referencing/0.37.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/2c/58/ca301544e1fa93ed4f80d724bf5b194f6e4b945841c5bfd555878eea9fcb/referencing-0.37.0-py3-none-any.whl",
+  "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231",
+  "original_license_paths": [
+    "referencing-0.37.0.dist-info/licenses/COPYING"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "a67968d8e03aa45e650fc2ff0d07796676db1a7841ce8e810bf2dba5af689464",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-referencing-0.37.0/01-COPYING.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

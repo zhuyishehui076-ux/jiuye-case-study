@@ -1,0 +1,21 @@
+{
+  "name": "@types/babel__core",
+  "version": "7.20.5",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40types%2Fbabel__core/7.20.5",
+  "artifact": "https://registry.npmjs.org/@types/babel__core/-/babel__core-7.20.5.tgz",
+  "sha256": "1865223be6b834c44abf5ebedafb1707019b4941be8021469980c7ef4c2e1155",
+  "original_license_paths": [
+    "babel__core/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "7526a16d72983566d87df3206ef4bfb1bf6adac538297cfc722d06b9cc2e1180",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_types_babel__core-7.20.5/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

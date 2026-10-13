@@ -1,0 +1,21 @@
+{
+  "name": "dayjs",
+  "version": "1.11.21",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/dayjs/1.11.21",
+  "artifact": "https://registry.npmjs.org/dayjs/-/dayjs-1.11.21.tgz",
+  "sha256": "290ec8bf81878ae4927581d9be74125f07722ea8bbea2ff77a2226dce12df876",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "a04614247bbc82f7452a3aedf89da7302b76f5c83856524af2c29b13ac1113b6",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-dayjs-1.11.21/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

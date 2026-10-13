@@ -1,0 +1,21 @@
+{
+  "name": "@ant-design/fast-color",
+  "version": "2.0.6",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40ant-design%2Ffast-color/2.0.6",
+  "artifact": "https://registry.npmjs.org/@ant-design/fast-color/-/fast-color-2.0.6.tgz",
+  "sha256": "ca7712f5f16c3c838177090ff02d6775064c8a251708bc428c32488267730013",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "05413c2ab86965101a0a82fdf7cf8c51c767e57d8022b00cf7812e9576efaaf1",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_ant-design_fast-color-2.0.6/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

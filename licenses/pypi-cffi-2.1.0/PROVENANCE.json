@@ -1,0 +1,21 @@
+{
+  "name": "cffi",
+  "version": "2.1.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/cffi/2.1.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/f9/c8/6c2de1d55cf35ef8b92885d5ef280790f0fb9634d87ea1cc315176aecd61/cffi-2.1.0-cp311-cp311-win_amd64.whl",
+  "sha256": "4f26194e3d95e06501b942642855aed4f953d55e95d7d01b7c4483db3ecff458",
+  "original_license_paths": [
+    "cffi-2.1.0.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT-0",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "4b75df872b40ed83aec2bcc9e761e7bbd3000fb714f294c3346fe39268a13a12",
+  "publisher_declared_license": "MIT-0",
+  "referenced_license_texts": [
+    "licenses/pypi-cffi-2.1.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

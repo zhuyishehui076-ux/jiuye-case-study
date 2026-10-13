@@ -1,0 +1,21 @@
+{
+  "name": "ruff",
+  "version": "0.8.4",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/ruff/0.8.4/json",
+  "artifact": "https://files.pythonhosted.org/packages/10/98/ed6b56a30ee76771c193ff7ceeaf1d2acc98d33a1a27b8479cbdb5c17a23/ruff-0.8.4-py3-none-win_amd64.whl",
+  "sha256": "f21a1143776f8656d7f364bd264a9d60f01b7f52243fbe90e7670c0dfe0cf65d",
+  "original_license_paths": [
+    "ruff-0.8.4.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "b17dd97ce4a885808a4353c42b4365e86125f755d409a83cb63161ca217e9110",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-ruff-0.8.4/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

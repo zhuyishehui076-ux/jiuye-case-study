@@ -1,0 +1,51 @@
+name: Case verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci --ignore-scripts
+        working-directory: frontend
+      - run: npm run build
+        working-directory: frontend
+  source-guards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/ci/check_secrets.py --self-test --tracked
+      - run: python deploy/test_case.py
+      - run: bash scripts/ci/check_no_cdn.sh
+      - run: bash scripts/ci/check_no_vision_deps.sh
+  postgres:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python deploy/case.py init test
+      - run: python deploy/case.py check test
+      - run: python deploy/case.py build test
+      - run: python deploy/case.py test test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: backend-junit
+          path: .case-state/test/reports/*.xml
+          include-hidden-files: true
+          if-no-files-found: warn

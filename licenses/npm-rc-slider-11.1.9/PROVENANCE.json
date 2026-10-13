@@ -1,0 +1,21 @@
+{
+  "name": "rc-slider",
+  "version": "11.1.9",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-slider/11.1.9",
+  "artifact": "https://registry.npmjs.org/rc-slider/-/rc-slider-11.1.9.tgz",
+  "sha256": "07b62273094a7a8615c099b50319e9e9079d130abda4921c8fd6a09b9abdc0c7",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "f49b7a4ee36aa01e61d7b0e07c932654fe42114e72e18f8757eb10ab786019ef",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-slider-11.1.9/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

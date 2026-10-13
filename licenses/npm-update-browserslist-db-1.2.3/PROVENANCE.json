@@ -1,0 +1,21 @@
+{
+  "name": "update-browserslist-db",
+  "version": "1.2.3",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/update-browserslist-db/1.2.3",
+  "artifact": "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz",
+  "sha256": "6bafda00d4356a4df5d0463b4e4ad45ebc9f438bfede793e218a9f9f7c6844c3",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "26658c5356ec2d06ba45382f0261e4f4989a6261c3610c492ef0bc0e8a6e8ee4",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-update-browserslist-db-1.2.3/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "browserslist",
+  "version": "4.28.7",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/browserslist/4.28.7",
+  "artifact": "https://registry.npmjs.org/browserslist/-/browserslist-4.28.7.tgz",
+  "sha256": "66daf576e768fd818214b29a82eb6f8f81e2737c612c320e9afa328871ab0997",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "2d1264c2976acf7c9e781ebb20723cd0709c0f5dbb3c496b1062555ff7dcf366",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-browserslist-4.28.7/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "call-bind-apply-helpers",
+  "version": "1.0.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/call-bind-apply-helpers/1.0.2",
+  "artifact": "https://registry.npmjs.org/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz",
+  "sha256": "073e9ff9dbabedf5c128020a677381e9f92c90188d118830b30a7656a7c37d2c",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "17e03e57371b7afa673a95f6075fbf7fe9f16b2b889aa664c2d6f07ffc41d7f7",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-call-bind-apply-helpers-1.0.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "mako",
+  "version": "1.3.12",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/mako/1.3.12/json",
+  "artifact": "https://files.pythonhosted.org/packages/bc/b1/a0ec7a5a9db730a08daef1fdfb8090435b82465abbf758a596f0ea88727e/mako-1.3.12-py3-none-any.whl",
+  "sha256": "8f61569480282dbf557145ce441e4ba888be453c30989f879f0d652e39f53ea9",
+  "original_license_paths": [
+    "mako-1.3.12.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "8af0a67f6e8ea054efc3d32d6f4313c2402406132a4e088189ae9fe7d0359a41",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-mako-1.3.12/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

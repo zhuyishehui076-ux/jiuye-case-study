@@ -1,0 +1,25 @@
+{
+  "name": "packaging",
+  "version": "26.3",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/packaging/26.3/json",
+  "artifact": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+  "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+  "original_license_paths": [
+    "packaging-26.3.dist-info/licenses/LICENSE",
+    "packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+    "packaging-26.3.dist-info/licenses/LICENSE.BSD"
+  ],
+  "package_redistributed": false,
+  "declared_license": "Apache-2.0 OR BSD-2-Clause",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "4f190d2f0b312b3086058cee64ab4333bf3ce67fb78b4c2bdb43899049b29f4d",
+  "publisher_declared_license": "Apache-2.0 OR BSD-2-Clause",
+  "referenced_license_texts": [
+    "licenses/pypi-packaging-26.3/01-LICENSE.txt",
+    "licenses/pypi-packaging-26.3/02-LICENSE.APACHE.txt",
+    "licenses/pypi-packaging-26.3/03-LICENSE.BSD.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

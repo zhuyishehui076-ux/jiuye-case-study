@@ -1,0 +1,21 @@
+{
+  "name": "fastapi",
+  "version": "0.136.3",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/fastapi/0.136.3/json",
+  "artifact": "https://files.pythonhosted.org/packages/e0/82/45359b62a067409bd929ae8a56b8ed13e5a8c8a61194b3c236920999ab83/fastapi-0.136.3-py3-none-any.whl",
+  "sha256": "3d2a69bdf04b7e9f3afa292c3bc7a98816bbfafa10bc9b45f3f3700d2f761620",
+  "original_license_paths": [
+    "fastapi-0.136.3.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "adde4062f2ac5001e004fbda068cc70e8c2f9b22076877efa86f879560c652b7",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-fastapi-0.136.3/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

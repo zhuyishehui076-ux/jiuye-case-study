@@ -1,0 +1,5 @@
+# 开发/测试直接依赖；运行依赖统一来自 requirements.txt，受 runtime 哈希锁约束。
+-r requirements.txt
+-c requirements.lock
+pytest==8.3.4
+ruff==0.8.4

@@ -1,0 +1,21 @@
+{
+  "name": "gopd",
+  "version": "1.2.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/gopd/1.2.0",
+  "artifact": "https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz",
+  "sha256": "d536d0de4dd285dc1468fbb7f39334a47ee0eec9c27f9b626a6e71466c9fda82",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "f32b3d15be12a14819a39fbfdd9422efd0c3aff46bee596d7676ae71a525c87e",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-gopd-1.2.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

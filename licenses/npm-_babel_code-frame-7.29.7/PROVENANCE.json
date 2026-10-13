@@ -1,0 +1,21 @@
+{
+  "name": "@babel/code-frame",
+  "version": "7.29.7",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40babel%2Fcode-frame/7.29.7",
+  "artifact": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.29.7.tgz",
+  "sha256": "fa8b176fa0b5d1d72b41ad33443f1f4f75933157a45010dffb51719f40c19c67",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "cae82927060854d7f83c7214325582ce47c665c3ad97010246c3983443f74a77",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_babel_code-frame-7.29.7/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "rc-cascader",
+  "version": "3.30.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-cascader/3.30.0",
+  "artifact": "https://registry.npmjs.org/rc-cascader/-/rc-cascader-3.30.0.tgz",
+  "sha256": "32e311266db83da6b3982878d441916c1a8b6f16c553af1177b0a4585347b2f2",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "41a6a8f0022c67e39c6b54377bd362277c4e31aab5c47fa104dd416dc42545db",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-cascader-3.30.0/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

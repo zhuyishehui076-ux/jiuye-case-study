@@ -1,0 +1,21 @@
+{
+  "name": "caniuse-lite",
+  "version": "1.0.30001816",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/caniuse-lite/1.0.30001816",
+  "artifact": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001816.tgz",
+  "sha256": "8370a3215e4a2fdf0139b8e9672e470f260d1e1ed96de71d97508c2a2e47a3e2",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "CC-BY-4.0",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "97ad8407af9860649e7adc89f7b39c48750198e97ecb60d24bbf11ee4f4539f2",
+  "publisher_declared_license": "CC-BY-4.0",
+  "referenced_license_texts": [
+    "licenses/npm-caniuse-lite-1.0.30001816/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

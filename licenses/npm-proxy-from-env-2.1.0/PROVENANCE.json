@@ -1,0 +1,21 @@
+{
+  "name": "proxy-from-env",
+  "version": "2.1.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/proxy-from-env/2.1.0",
+  "artifact": "https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-2.1.0.tgz",
+  "sha256": "e9c52dbf1e382319d5da00b8d964805859b7eb1424450e049d12743d7e19fc9a",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "4847b2fd869012dbbf3b147202c02a0b1a165b9aa5efc598d20e8ca04946afef",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-proxy-from-env-2.1.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

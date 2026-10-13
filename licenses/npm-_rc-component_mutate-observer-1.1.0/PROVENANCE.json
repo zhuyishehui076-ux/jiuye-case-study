@@ -1,0 +1,21 @@
+{
+  "name": "@rc-component/mutate-observer",
+  "version": "1.1.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rc-component%2Fmutate-observer/1.1.0",
+  "artifact": "https://registry.npmjs.org/@rc-component/mutate-observer/-/mutate-observer-1.1.0.tgz",
+  "sha256": "f5709e3444f5c203f3bf405a34e057a75d42feb8af708a76c06a993b24e76b8b",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "89a36282401ae9949683e2cd30971594a092a50b3de735f4fcd59a4c8399a4ac",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_rc-component_mutate-observer-1.1.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

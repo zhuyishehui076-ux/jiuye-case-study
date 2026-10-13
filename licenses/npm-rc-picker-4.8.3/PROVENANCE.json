@@ -1,0 +1,21 @@
+{
+  "name": "rc-picker",
+  "version": "4.8.3",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-picker/4.8.3",
+  "artifact": "https://registry.npmjs.org/rc-picker/-/rc-picker-4.8.3.tgz",
+  "sha256": "24924cace820a4c8dd19f4b75389760d9fd50e4f59202795676a19053ff7aded",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "e7fe9a623ac229c8e1b7b1edc10ffb0a5522f413104653d18756a37ed1ced4fd",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-picker-4.8.3/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

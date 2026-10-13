@@ -1,0 +1,21 @@
+{
+  "name": "dunder-proto",
+  "version": "1.0.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/dunder-proto/1.0.1",
+  "artifact": "https://registry.npmjs.org/dunder-proto/-/dunder-proto-1.0.1.tgz",
+  "sha256": "ed1342228c82c10df9921c59d684df516a0cd6ed25b61e5f9d6330895326cfdb",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "47dc4fbee2f5a3e29792627103742811f3853f004e0e8ce8aadb991dac31161a",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-dunder-proto-1.0.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

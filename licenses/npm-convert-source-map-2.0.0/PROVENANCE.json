@@ -1,0 +1,21 @@
+{
+  "name": "convert-source-map",
+  "version": "2.0.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/convert-source-map/2.0.0",
+  "artifact": "https://registry.npmjs.org/convert-source-map/-/convert-source-map-2.0.0.tgz",
+  "sha256": "17f7253ec7e4e09f68371192fded2b5241a5cf85e610e5059b1d49e878fe1898",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "3e67194b0b4da3828b676eab0fd6355751fc29429337394f2056e7422f6ae87a",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-convert-source-map-2.0.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

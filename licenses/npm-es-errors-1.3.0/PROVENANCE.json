@@ -1,0 +1,21 @@
+{
+  "name": "es-errors",
+  "version": "1.3.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/es-errors/1.3.0",
+  "artifact": "https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz",
+  "sha256": "d14dd1c35b4bd3b8aca3219fd3627eb7f3eb49cf6b4c8a7ca58b91fd7a190993",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "87d4380e4d9fe3de8da8fd8134c4e738e68266b6d37bf787432e234c8c721b59",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-es-errors-1.3.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

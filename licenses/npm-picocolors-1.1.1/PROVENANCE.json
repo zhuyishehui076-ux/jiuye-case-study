@@ -1,0 +1,21 @@
+{
+  "name": "picocolors",
+  "version": "1.1.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/picocolors/1.1.1",
+  "artifact": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+  "sha256": "d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "ISC",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "469edbe4663b07f19026f60ec43744bad678caa89a6be7bf6c4692e2967ddf9d",
+  "publisher_declared_license": "ISC",
+  "referenced_license_texts": [
+    "licenses/npm-picocolors-1.1.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

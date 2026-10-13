@@ -1,0 +1,21 @@
+{
+  "name": "react-is",
+  "version": "18.3.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/react-is/18.3.1",
+  "artifact": "https://registry.npmjs.org/react-is/-/react-is-18.3.1.tgz",
+  "sha256": "867a2bb62ef5277e6b2065cdd1332cda07cc92aa2979b22d05c86c89fb918552",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "b0fcb8fd5db9c9f548552cfddecb5e0d429d23eabf763c999dae3bc09739adfc",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-react-is-18.3.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

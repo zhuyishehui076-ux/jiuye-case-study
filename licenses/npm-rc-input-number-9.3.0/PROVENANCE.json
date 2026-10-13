@@ -1,0 +1,21 @@
+{
+  "name": "rc-input-number",
+  "version": "9.3.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-input-number/9.3.0",
+  "artifact": "https://registry.npmjs.org/rc-input-number/-/rc-input-number-9.3.0.tgz",
+  "sha256": "8516b0d8d105150674382145df43b8056f4a4d9d917efe05ef8312df8977239c",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "7a4a2810e04e292dfae0724e1af87075c81c6d0f52b4b6234ec02e79a7a55295",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-input-number-9.3.0/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

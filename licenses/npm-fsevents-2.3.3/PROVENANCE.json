@@ -1,0 +1,21 @@
+{
+  "name": "fsevents",
+  "version": "2.3.3",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/fsevents/2.3.3",
+  "artifact": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
+  "sha256": "c77e7a5d5ff31dd7acea7c44d4a0455e0528cdacbd24a8cb6c82b66d239b587e",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "b9f892b7d399e73de65849e3647094e648ff91c0a03e4460ac0fdcd335df2704",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-fsevents-2.3.3/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

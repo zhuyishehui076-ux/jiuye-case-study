@@ -1,0 +1,21 @@
+{
+  "name": "@rc-component/qrcode",
+  "version": "1.0.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rc-component%2Fqrcode/1.0.1",
+  "artifact": "https://registry.npmjs.org/@rc-component/qrcode/-/qrcode-1.0.1.tgz",
+  "sha256": "f1033a595bd3fc258106fd735f378606287feae7c35596ff073a373276a4a985",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "7f1cdeb8bcd44665451de7c9a90df6e50ec4fbb4e562b30b4462e9d1b408b803",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_rc-component_qrcode-1.0.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

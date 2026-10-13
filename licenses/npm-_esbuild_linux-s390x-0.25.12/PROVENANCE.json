@@ -1,0 +1,19 @@
+{
+  "name": "@esbuild/linux-s390x",
+  "version": "0.25.12",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40esbuild%2Flinux-s390x/0.25.12",
+  "artifact": "https://registry.npmjs.org/@esbuild/linux-s390x/-/linux-s390x-0.25.12.tgz",
+  "sha256": "35818fadf6809a5617d8533c2f91d2e321daeaf445729274d22213e831895bc7",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "3de5ad92c3990e2e387f70d0e05df7412ef3edd8988f0508ee011ac5f62c9a4a",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-esbuild-0.25.12/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

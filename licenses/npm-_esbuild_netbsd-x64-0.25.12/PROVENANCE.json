@@ -1,0 +1,19 @@
+{
+  "name": "@esbuild/netbsd-x64",
+  "version": "0.25.12",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40esbuild%2Fnetbsd-x64/0.25.12",
+  "artifact": "https://registry.npmjs.org/@esbuild/netbsd-x64/-/netbsd-x64-0.25.12.tgz",
+  "sha256": "d706a08a052577e74474036f51604b9c19dff434c1e14b8465ccd452fb225f95",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "3ac93219c455645a5f8fbc50f4ff57b1b3ddf1cdad4f848213f8b42300281d1b",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-esbuild-0.25.12/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

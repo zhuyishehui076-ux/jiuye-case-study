@@ -1,0 +1,19 @@
+{
+  "name": "@rollup/rollup-openbsd-x64",
+  "version": "4.62.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rollup%2Frollup-openbsd-x64/4.62.2",
+  "artifact": "https://registry.npmjs.org/@rollup/rollup-openbsd-x64/-/rollup-openbsd-x64-4.62.2.tgz",
+  "sha256": "5d6e09119ac7022f79571dd1b464f723df606182ad3173f927ce1921d4816383",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "be3216d1a1f6e6965541bcfeb0792a3d4b9ee114134fccd7f55347efe6611008",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rollup-4.62.2/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

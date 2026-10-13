@@ -1,0 +1,21 @@
+{
+  "name": "zrender",
+  "version": "5.6.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/zrender/5.6.0",
+  "artifact": "https://registry.npmjs.org/zrender/-/zrender-5.6.0.tgz",
+  "sha256": "63e23231896aa7b87c7c38c5d203a78c938060d04b5162bc164300cb2d98ce2e",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "BSD-3-Clause",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "4cf4ac10e77e06741e8733362de9552809a29615165fec735cd25094d0c1a492",
+  "publisher_declared_license": "BSD-3-Clause",
+  "referenced_license_texts": [
+    "licenses/npm-zrender-5.6.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

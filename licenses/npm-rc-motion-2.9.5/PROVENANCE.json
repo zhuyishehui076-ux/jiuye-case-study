@@ -1,0 +1,21 @@
+{
+  "name": "rc-motion",
+  "version": "2.9.5",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-motion/2.9.5",
+  "artifact": "https://registry.npmjs.org/rc-motion/-/rc-motion-2.9.5.tgz",
+  "sha256": "476298fa5f47fee05a61409a5e069352cb0677b399f29f17f494c08a453958ea",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "192c020616c8044b3ef9ec07c0fbdd728b501812d749fed7c29056cf235358ba",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-motion-2.9.5/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

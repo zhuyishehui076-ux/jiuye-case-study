@@ -1,0 +1,21 @@
+{
+  "name": "rc-pagination",
+  "version": "5.0.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-pagination/5.0.0",
+  "artifact": "https://registry.npmjs.org/rc-pagination/-/rc-pagination-5.0.0.tgz",
+  "sha256": "95dc704d7cd82148ecc5169d0d3630a091bcafd7f9507f1014f22b82a0af1dd0",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "67e57d0b5dc12aaa26dcbb8f32b7bb4fddfb606f1e7cf1b89bb979524c1823ce",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-pagination-5.0.0/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

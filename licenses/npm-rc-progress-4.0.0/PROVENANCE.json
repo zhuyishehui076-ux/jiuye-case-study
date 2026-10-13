@@ -1,0 +1,21 @@
+{
+  "name": "rc-progress",
+  "version": "4.0.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-progress/4.0.0",
+  "artifact": "https://registry.npmjs.org/rc-progress/-/rc-progress-4.0.0.tgz",
+  "sha256": "8fab942de7adf68992cf4b9ed5007a5d4941385c3fa97de14295843c612a7f20",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "e8a5f3aff5baec6295ac8da85ec2b47469ae356d151248fc0be33ea72fd38b0b",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-progress-4.0.0/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "mime-types",
+  "version": "2.1.35",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/mime-types/2.1.35",
+  "artifact": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz",
+  "sha256": "49734fc98906e9baaacf8034923470a4c84de72943a7c005face63360701d1c3",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "80fbc0dde3c44fdce816eb9cc1cc13314597e88c4e3e599644eb4246879526d7",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-mime-types-2.1.35/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

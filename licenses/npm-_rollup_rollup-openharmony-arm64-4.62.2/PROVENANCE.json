@@ -1,0 +1,19 @@
+{
+  "name": "@rollup/rollup-openharmony-arm64",
+  "version": "4.62.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rollup%2Frollup-openharmony-arm64/4.62.2",
+  "artifact": "https://registry.npmjs.org/@rollup/rollup-openharmony-arm64/-/rollup-openharmony-arm64-4.62.2.tgz",
+  "sha256": "3c8e2ef48ebe8648fdfea8afec3057b21aa39e8060ed500746faa8e3fe20d8a0",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "f5503e87a641b9b537bc556f423ef099263ed7d0465bc35a58cd849009fdb651",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rollup-4.62.2/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "scroll-into-view-if-needed",
+  "version": "3.1.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/scroll-into-view-if-needed/3.1.0",
+  "artifact": "https://registry.npmjs.org/scroll-into-view-if-needed/-/scroll-into-view-if-needed-3.1.0.tgz",
+  "sha256": "ba78930926ae9e66475976204fd4ded1f5bc607b3093fe5f71d938bf7859c69b",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "240d14a620303ce851744f007e774dd26032c38dbb29ccd2ba5af40a5e68b6a7",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-scroll-into-view-if-needed-3.1.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "fdir",
+  "version": "6.5.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/fdir/6.5.0",
+  "artifact": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz",
+  "sha256": "241ddcd9f31e2a1fca405326017dbb8333ce174198e887f0f96387c29f0d365e",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "1b30d7d350499f021d56e9f6653e723c746d253d482bffa4c7fc6a2a578b0a44",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-fdir-6.5.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "httpcore",
+  "version": "1.0.9",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/httpcore/1.0.9/json",
+  "artifact": "https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl",
+  "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+  "original_license_paths": [
+    "httpcore-1.0.9.dist-info/licenses/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "BSD-3-Clause",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "e26eca5c3d288fe9e6446af9bcbca1038ba688629d5c8a2886c47d74718d87a2",
+  "publisher_declared_license": "BSD-3-Clause",
+  "referenced_license_texts": [
+    "licenses/pypi-httpcore-1.0.9/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

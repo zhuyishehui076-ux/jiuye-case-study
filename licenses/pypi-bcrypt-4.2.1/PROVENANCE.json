@@ -1,0 +1,21 @@
+{
+  "name": "bcrypt",
+  "version": "4.2.1",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/bcrypt/4.2.1/json",
+  "artifact": "https://files.pythonhosted.org/packages/76/b9/d51d34e6cd6d887adddb28a8680a1d34235cc45b9d6e238ce39b98199ca0/bcrypt-4.2.1-cp39-abi3-win_amd64.whl",
+  "sha256": "e84e0e6f8e40a242b11bce56c313edc2be121cec3e0ec2d76fce01f6af33c07c",
+  "original_license_paths": [
+    "bcrypt-4.2.1.dist-info/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "Apache-2.0",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "d31277a842fe5e89dfceffa959243a4779d9c129ef12ee8bdc633c68c0ff03a4",
+  "publisher_declared_license": "Apache-2.0",
+  "referenced_license_texts": [
+    "licenses/pypi-bcrypt-4.2.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

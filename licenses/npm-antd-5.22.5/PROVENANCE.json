@@ -1,0 +1,21 @@
+{
+  "name": "antd",
+  "version": "5.22.5",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/antd/5.22.5",
+  "artifact": "https://registry.npmjs.org/antd/-/antd-5.22.5.tgz",
+  "sha256": "6385739f65039aeceee9c103f88ab20982f226dfadc54931319b036a9ab00a2f",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "9da4b0db66fbf15ca1d909379d02b52b958cbe8f244b41dc8ed48b12092dfc45",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-antd-5.22.5/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "jsesc",
+  "version": "3.1.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/jsesc/3.1.0",
+  "artifact": "https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz",
+  "sha256": "0c712225ccca9a70bf83f2ac2f52a268c858c7df3b3df196f1623239d80d3c09",
+  "original_license_paths": [
+    "package/LICENSE-MIT.txt"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "e6d533b45e4f1d6fc1ef9975c6ca356f9629a4ddbcc6e5b8a8f23c882fb8e399",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-jsesc-3.1.0/01-LICENSE-MIT.txt.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

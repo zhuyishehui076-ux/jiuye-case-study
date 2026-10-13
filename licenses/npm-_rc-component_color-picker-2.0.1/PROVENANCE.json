@@ -1,0 +1,21 @@
+{
+  "name": "@rc-component/color-picker",
+  "version": "2.0.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rc-component%2Fcolor-picker/2.0.1",
+  "artifact": "https://registry.npmjs.org/@rc-component/color-picker/-/color-picker-2.0.1.tgz",
+  "sha256": "560007306e2ad24bc15f1755cc9c04bc4c871960a09ffea351473cb5f39573b1",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "e832ac536ca506be29fc9e2a3f1366cbb0b41f85dd6c665d1169dbc8793504e6",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_rc-component_color-picker-2.0.1/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

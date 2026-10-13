@@ -1,0 +1,19 @@
+{
+  "name": "@esbuild/aix-ppc64",
+  "version": "0.25.12",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40esbuild%2Faix-ppc64/0.25.12",
+  "artifact": "https://registry.npmjs.org/@esbuild/aix-ppc64/-/aix-ppc64-0.25.12.tgz",
+  "sha256": "6f36448f31d26425773b80985184f3bfb5661acede70c503b201c823836a10e8",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "425e466b5b48e241ab32cfd4032d8f0225d5609abfae891aee79f0b9e833245a",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-esbuild-0.25.12/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

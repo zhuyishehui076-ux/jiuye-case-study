@@ -1,0 +1,21 @@
+{
+  "name": "certifi",
+  "version": "2026.6.17",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/certifi/2026.6.17/json",
+  "artifact": "https://files.pythonhosted.org/packages/ef/2f/c5464532e965badff2f4c4c1a3a83f5697f0d7c407ed0cda44aaa99bb451/certifi-2026.6.17-py3-none-any.whl",
+  "sha256": "2227dcbaafe0d2f59279d1762ddddc37783ed4354594f194ffc31d20f41fc3db",
+  "original_license_paths": [
+    "certifi-2026.6.17.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MPL-2.0",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "e342f67597312a318fcda12b980332b8e52d5554a4c1526635574f0cbdb7369f",
+  "publisher_declared_license": "MPL-2.0",
+  "referenced_license_texts": [
+    "licenses/pypi-certifi-2026.6.17/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

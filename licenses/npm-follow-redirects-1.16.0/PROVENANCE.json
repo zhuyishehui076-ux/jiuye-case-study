@@ -1,0 +1,21 @@
+{
+  "name": "follow-redirects",
+  "version": "1.16.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/follow-redirects/1.16.0",
+  "artifact": "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.16.0.tgz",
+  "sha256": "eba127bdabdf79d668187c7bac7123c136eee08930dd421416ba8a72613bae77",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "9b8793f47cbbe544ab9fe780f5ab2d938f5ac9cb07df76885bc3977aeecdf583",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-follow-redirects-1.16.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

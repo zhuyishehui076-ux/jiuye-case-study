@@ -1,0 +1,21 @@
+{
+  "name": "hasown",
+  "version": "2.0.4",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/hasown/2.0.4",
+  "artifact": "https://registry.npmjs.org/hasown/-/hasown-2.0.4.tgz",
+  "sha256": "e9d2b03f95573600e1c13124ce618e3142ed2c538d164595bedcd4408b8a4e4c",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "dc00ea9560288aa32633618c71bce761d53a2cf1df5cca23b32a8e11fd26d341",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-hasown-2.0.4/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

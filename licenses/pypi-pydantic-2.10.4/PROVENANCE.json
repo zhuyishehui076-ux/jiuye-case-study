@@ -1,0 +1,21 @@
+{
+  "name": "pydantic",
+  "version": "2.10.4",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/pydantic/2.10.4/json",
+  "artifact": "https://files.pythonhosted.org/packages/f3/26/3e1bbe954fde7ee22a6e7d31582c642aad9e84ffe4b5fb61e63b87cd326f/pydantic-2.10.4-py3-none-any.whl",
+  "sha256": "597e135ea68be3a37552fb524bc7d0d66dcf93d395acd93a00682f1efcb8ee3d",
+  "original_license_paths": [
+    "pydantic-2.10.4.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "License :: OSI Approved :: MIT License",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "8f0c85d4173d2354fde1539155b355613038487ecb7b111e56ef70d25f156741",
+  "publisher_declared_license": null,
+  "referenced_license_texts": [
+    "licenses/pypi-pydantic-2.10.4/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

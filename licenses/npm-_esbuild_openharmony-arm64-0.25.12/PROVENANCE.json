@@ -1,0 +1,19 @@
+{
+  "name": "@esbuild/openharmony-arm64",
+  "version": "0.25.12",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40esbuild%2Fopenharmony-arm64/0.25.12",
+  "artifact": "https://registry.npmjs.org/@esbuild/openharmony-arm64/-/openharmony-arm64-0.25.12.tgz",
+  "sha256": "79828e6d55f5155ca81e55e04717aecb9125fd8b5202ba8b6e9e78cc8943a62d",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "95a249ea21534e09076b446effd19d18ebf0f81c2723eca46b91b1d89032a6dc",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-esbuild-0.25.12/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

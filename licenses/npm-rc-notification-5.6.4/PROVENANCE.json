@@ -1,0 +1,37 @@
+{
+  "name": "rc-notification",
+  "version": "5.6.4",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-notification/5.6.4",
+  "artifact": "https://registry.npmjs.org/rc-notification/-/rc-notification-5.6.4.tgz",
+  "sha256": "a9ea8d630a4074170b3cb2dc247f027adb93f62542d35cbd15f318b3c130b5f9",
+  "original_license_paths": [
+    "package/es/Notice.js",
+    "package/lib/Notice.js",
+    "package/es/NoticeList.js",
+    "package/lib/NoticeList.js",
+    "package/LICENSE.md",
+    "package/es/Notice.d.ts",
+    "package/lib/Notice.d.ts",
+    "package/es/NoticeList.d.ts",
+    "package/lib/NoticeList.d.ts"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "a894b8556013a81cb854aca18ae1b7cca05b1e194655e3b9bb983cb36c9bc21b",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-notification-5.6.4/01-Notice.js.txt",
+    "licenses/npm-rc-notification-5.6.4/02-Notice.js.txt",
+    "licenses/npm-rc-notification-5.6.4/03-NoticeList.js.txt",
+    "licenses/npm-rc-notification-5.6.4/04-NoticeList.js.txt",
+    "licenses/npm-rc-notification-5.6.4/05-LICENSE.md.txt",
+    "licenses/npm-rc-notification-5.6.4/06-Notice.d.ts.txt",
+    "licenses/npm-rc-notification-5.6.4/07-Notice.d.ts.txt",
+    "licenses/npm-rc-notification-5.6.4/08-NoticeList.d.ts.txt",
+    "licenses/npm-rc-notification-5.6.4/09-NoticeList.d.ts.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

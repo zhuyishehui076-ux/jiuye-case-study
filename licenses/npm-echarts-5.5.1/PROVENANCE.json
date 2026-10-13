@@ -1,0 +1,25 @@
+{
+  "name": "echarts",
+  "version": "5.5.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/echarts/5.5.1",
+  "artifact": "https://registry.npmjs.org/echarts/-/echarts-5.5.1.tgz",
+  "sha256": "1f0eae29c406496a77789a7d7f56b811cae034ac95c0b3808215998f4ba0fbf3",
+  "original_license_paths": [
+    "package/LICENSE",
+    "package/licenses/LICENSE-d3",
+    "package/NOTICE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "Apache-2.0",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "05d1c1cdaa94d3a9caabd82b3b1af9f30e6ecaa14784c143df7ddd344c4d347e",
+  "publisher_declared_license": "Apache-2.0",
+  "referenced_license_texts": [
+    "licenses/npm-echarts-5.5.1/01-LICENSE.txt",
+    "licenses/npm-echarts-5.5.1/02-LICENSE-d3.txt",
+    "licenses/npm-echarts-5.5.1/03-NOTICE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "axios",
+  "version": "1.20.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/axios/1.20.0",
+  "artifact": "https://registry.npmjs.org/axios/-/axios-1.20.0.tgz",
+  "sha256": "5aa2dc9a5d6ced926e4b6ca8ef8e0253b118867e240db8650c49379e972c12ac",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "a39c8d109ba0bb1aa5a3f759468a0225c2f2bb96eae9ef3d18d742fa35d4c873",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-axios-1.20.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

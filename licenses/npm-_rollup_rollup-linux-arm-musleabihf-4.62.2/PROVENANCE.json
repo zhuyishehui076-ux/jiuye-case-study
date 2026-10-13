@@ -1,0 +1,19 @@
+{
+  "name": "@rollup/rollup-linux-arm-musleabihf",
+  "version": "4.62.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rollup%2Frollup-linux-arm-musleabihf/4.62.2",
+  "artifact": "https://registry.npmjs.org/@rollup/rollup-linux-arm-musleabihf/-/rollup-linux-arm-musleabihf-4.62.2.tgz",
+  "sha256": "e2305229848f5562f76c97b96ca992a7408467fef38355bef7f2948882fd074a",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "04b8ac6ef26c92140328426943cf5f9a3feb16e61cba1b106ea582152b1c6fd3",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rollup-4.62.2/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@ant-design/react-slick",
+  "version": "1.1.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40ant-design%2Freact-slick/1.1.2",
+  "artifact": "https://registry.npmjs.org/@ant-design/react-slick/-/react-slick-1.1.2.tgz",
+  "sha256": "e9e606f11d2de5691c5c73343c2a46c984a43c9a08671b4acc9c519bb1d319a7",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "62f5eefb77d21e3a0e5000c8d0762ee9a9092166a6df032d3a4d64aadc9d1caa",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_ant-design_react-slick-1.1.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

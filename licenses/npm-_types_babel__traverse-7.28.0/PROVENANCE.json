@@ -1,0 +1,21 @@
+{
+  "name": "@types/babel__traverse",
+  "version": "7.28.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40types%2Fbabel__traverse/7.28.0",
+  "artifact": "https://registry.npmjs.org/@types/babel__traverse/-/babel__traverse-7.28.0.tgz",
+  "sha256": "2cc7973029fb3b69f77cf55b42be307ff34f63a68e55a173872a9712253fbc90",
+  "original_license_paths": [
+    "babel__traverse/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "04856bc1312edc27227b9abfe8171bc76d1cb7340e307865f8c5dc54208f21d2",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_types_babel__traverse-7.28.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

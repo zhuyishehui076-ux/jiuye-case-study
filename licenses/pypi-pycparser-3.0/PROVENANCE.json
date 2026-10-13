@@ -1,0 +1,21 @@
+{
+  "name": "pycparser",
+  "version": "3.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/pycparser/3.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
+  "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992",
+  "original_license_paths": [
+    "pycparser-3.0.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "BSD-3-Clause",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "5eb63b17852f6bec41e2ea542377ae6ad61185467916bf9947eb24f86c0fd132",
+  "publisher_declared_license": "BSD-3-Clause",
+  "referenced_license_texts": [
+    "licenses/pypi-pycparser-3.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

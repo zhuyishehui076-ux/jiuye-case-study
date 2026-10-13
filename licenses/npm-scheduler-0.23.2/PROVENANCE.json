@@ -1,0 +1,21 @@
+{
+  "name": "scheduler",
+  "version": "0.23.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/scheduler/0.23.2",
+  "artifact": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.2.tgz",
+  "sha256": "e4f1d8fe63a9ab93ef66c92b0ad1af9c1326adbf7f1bd5e9053cac0fee6f26ae",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "7c8e338d51d112abd4f8e37cce27e0b70105ae23af8ea88fd82c58aa7b250d93",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-scheduler-0.23.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

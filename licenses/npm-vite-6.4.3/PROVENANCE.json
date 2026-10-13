@@ -1,0 +1,21 @@
+{
+  "name": "vite",
+  "version": "6.4.3",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/vite/6.4.3",
+  "artifact": "https://registry.npmjs.org/vite/-/vite-6.4.3.tgz",
+  "sha256": "e498f166131407cd8ab819dfbc656c62d514b4e5e62f6f639efcef1614beb809",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "419907eba71cf9341b8148fd3fd25ba4301a4dd230f956fa240bf6190366a0fd",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-vite-6.4.3/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

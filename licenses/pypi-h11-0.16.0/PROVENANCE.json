@@ -1,0 +1,21 @@
+{
+  "name": "h11",
+  "version": "0.16.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/h11/0.16.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl",
+  "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+  "original_license_paths": [
+    "h11-0.16.0.dist-info/licenses/LICENSE.txt"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "97f4efb9cc00826f0408076983adc1a1e48e8f2cabf403aaf250f724e081440d",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-h11-0.16.0/01-LICENSE.txt.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

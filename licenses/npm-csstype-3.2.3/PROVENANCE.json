@@ -1,0 +1,21 @@
+{
+  "name": "csstype",
+  "version": "3.2.3",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/csstype/3.2.3",
+  "artifact": "https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz",
+  "sha256": "f3501f8ee1c73f7568fecb22c11231162c0467e59262461da5579519307427a3",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "011e326aaa6478afb0d75e84c517f4e6b95de1253a2728502791f75c065bc49f",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-csstype-3.2.3/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

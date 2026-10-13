@@ -1,0 +1,21 @@
+{
+  "name": "@ant-design/colors",
+  "version": "7.2.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40ant-design%2Fcolors/7.2.1",
+  "artifact": "https://registry.npmjs.org/@ant-design/colors/-/colors-7.2.1.tgz",
+  "sha256": "051d1c523cd4655f675eed5cab6d0f742e7aaf3fce9d355ef77929ef1b29c4ec",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "4630369093e44fa13791750e60f2fe941ea19b8e1aace9053f4678cb8314a43e",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_ant-design_colors-7.2.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,25 @@
+{
+  "name": "cryptography",
+  "version": "48.0.1",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/cryptography/48.0.1/json",
+  "artifact": "https://files.pythonhosted.org/packages/c5/69/0572c77dbace6fef72f33755bd52ea399c71367250d366237f8691826b9e/cryptography-48.0.1-cp311-abi3-win_amd64.whl",
+  "sha256": "39489bfca54c7a1f6b297efcd8bc608ab92d16c4ca631b0cad4da46724588b24",
+  "original_license_paths": [
+    "cryptography-48.0.1.dist-info/licenses/LICENSE",
+    "cryptography-48.0.1.dist-info/licenses/LICENSE.APACHE",
+    "cryptography-48.0.1.dist-info/licenses/LICENSE.BSD"
+  ],
+  "package_redistributed": false,
+  "declared_license": "Apache-2.0 OR BSD-3-Clause",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "eb0177ac13bd74e0668aa81910ddeb553295d46533fdb6ce2468dc1aaf959d61",
+  "publisher_declared_license": "Apache-2.0 OR BSD-3-Clause",
+  "referenced_license_texts": [
+    "licenses/pypi-cryptography-48.0.1/01-LICENSE.txt",
+    "licenses/pypi-cryptography-48.0.1/02-LICENSE.APACHE.txt",
+    "licenses/pypi-cryptography-48.0.1/03-LICENSE.BSD.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

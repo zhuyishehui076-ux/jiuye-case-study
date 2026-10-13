@@ -1,0 +1,21 @@
+{
+  "name": "sqlalchemy",
+  "version": "2.0.36",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/sqlalchemy/2.0.36/json",
+  "artifact": "https://files.pythonhosted.org/packages/b1/03/d12b7c1d36fd80150c1d52e121614cf9377dac99e5497af8d8f5b2a8db64/SQLAlchemy-2.0.36-cp311-cp311-win_amd64.whl",
+  "sha256": "23623166bfefe1487d81b698c423f8678e80df8b54614c2bf4b4cfcd7c711959",
+  "original_license_paths": [
+    "SQLAlchemy-2.0.36.dist-info/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "a160a77085824e1ce9a4227425bbb84c61d6220998b769df9d6c8423e993312f",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-sqlalchemy-2.0.36/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

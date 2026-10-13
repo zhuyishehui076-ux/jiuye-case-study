@@ -1,0 +1,21 @@
+{
+  "name": "pyjwt",
+  "version": "2.14.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/pyjwt/2.14.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/9c/97/672cb32ce0dfea44b740cb7b4f97038463b9cf7c0ead1aacf595572851d6/pyjwt-2.14.0-py3-none-any.whl",
+  "sha256": "ad0cef71c756a56e74863c2919cf0985f72decbcfcb550ee2f422e7c62b5eedc",
+  "original_license_paths": [
+    "pyjwt-2.14.0.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "bf8c6cfa99f1024a20b490debac5c4ee9474f32ba0eaaabb0903fd383bfa8f88",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-pyjwt-2.14.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

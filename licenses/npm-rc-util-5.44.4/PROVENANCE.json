@@ -1,0 +1,21 @@
+{
+  "name": "rc-util",
+  "version": "5.44.4",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-util/5.44.4",
+  "artifact": "https://registry.npmjs.org/rc-util/-/rc-util-5.44.4.tgz",
+  "sha256": "5c5f9c9f78112ef0b8e18ad54f4f741a3cfb13198ffb5aceaf12e896d72e12cb",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "e4929c2fa08928813634823bbc10aad1efe33b1ca972a058644ddc5b5a7d1790",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-util-5.44.4/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

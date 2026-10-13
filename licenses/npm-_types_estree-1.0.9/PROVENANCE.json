@@ -1,0 +1,21 @@
+{
+  "name": "@types/estree",
+  "version": "1.0.9",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40types%2Festree/1.0.9",
+  "artifact": "https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz",
+  "sha256": "ec8f3c0dfb21497db5a3480c45a6cf6f9b18d3b337b2ea4d03e3ef2a9c2bb358",
+  "original_license_paths": [
+    "estree/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "d48d263fe819a1d4dd0f27e7c950c476885ec6937d3547afb235b91c2d09cfb5",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_types_estree-1.0.9/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

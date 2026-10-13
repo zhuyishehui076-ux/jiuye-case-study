@@ -1,0 +1,19 @@
+{
+  "name": "@esbuild/linux-ppc64",
+  "version": "0.25.12",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40esbuild%2Flinux-ppc64/0.25.12",
+  "artifact": "https://registry.npmjs.org/@esbuild/linux-ppc64/-/linux-ppc64-0.25.12.tgz",
+  "sha256": "1cd2f06d19e650b31d01474f82d72ff0a2cd4b15e901a83c22e9678c7958a10a",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "009aa8c796273f88ddd7b0c01787f0cf541593f1e652a789a6424c8a5934eaaf",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-esbuild-0.25.12/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

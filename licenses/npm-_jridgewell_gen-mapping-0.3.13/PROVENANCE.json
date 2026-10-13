@@ -1,0 +1,21 @@
+{
+  "name": "@jridgewell/gen-mapping",
+  "version": "0.3.13",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40jridgewell%2Fgen-mapping/0.3.13",
+  "artifact": "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz",
+  "sha256": "bc16f658c1f6d63e0c8738ab881d03f49f1955d8f853cdcb8f7d315cf62f0082",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "8d6579337ef8a2b88374cd0c4f59c7108f59c3a092d001a9a01b6ea953f33711",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_jridgewell_gen-mapping-0.3.13/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

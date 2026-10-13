@@ -1,0 +1,19 @@
+{
+  "name": "@esbuild/linux-riscv64",
+  "version": "0.25.12",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40esbuild%2Flinux-riscv64/0.25.12",
+  "artifact": "https://registry.npmjs.org/@esbuild/linux-riscv64/-/linux-riscv64-0.25.12.tgz",
+  "sha256": "64738a7389ebf341216c634916d8eef90f0cf57636f8de2c117f7ee89fdefa91",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "5049958bf81ea1caff51578ddf1ba8a685312ec46ae921844db96bcc2f6b75ff",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-esbuild-0.25.12/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

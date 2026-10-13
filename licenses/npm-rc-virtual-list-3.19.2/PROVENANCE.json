@@ -1,0 +1,21 @@
+{
+  "name": "rc-virtual-list",
+  "version": "3.19.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-virtual-list/3.19.2",
+  "artifact": "https://registry.npmjs.org/rc-virtual-list/-/rc-virtual-list-3.19.2.tgz",
+  "sha256": "60ccc6bdb60d60bd3dbb6577886470057f71c2eda57bc93cd4295c235ade420f",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "2518c96d4cebc785dde015eb985979dc19e45d9b3ad93d021f4f0ac5f2fdb3e8",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-virtual-list-3.19.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

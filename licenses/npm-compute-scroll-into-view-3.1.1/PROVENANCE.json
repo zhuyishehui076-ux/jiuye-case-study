@@ -1,0 +1,21 @@
+{
+  "name": "compute-scroll-into-view",
+  "version": "3.1.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/compute-scroll-into-view/3.1.1",
+  "artifact": "https://registry.npmjs.org/compute-scroll-into-view/-/compute-scroll-into-view-3.1.1.tgz",
+  "sha256": "e00a19e29e50d7af70d83d9e3a870cbb428dbb7097407a8a53892146708ac584",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "959fcac6de7854a6fa9efc47c4de1069ea5902373fc2507ac5136b265b8c7395",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-compute-scroll-into-view-3.1.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

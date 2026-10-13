@@ -1,0 +1,21 @@
+{
+  "name": "annotated-types",
+  "version": "0.7.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/annotated-types/0.7.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl",
+  "sha256": "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53",
+  "original_license_paths": [
+    "annotated_types-0.7.0.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "License :: OSI Approved :: MIT License",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "485116aef8ac66993a2681ff3ac1b66f67de2cb4a29ec11b1a3112ea39870fe5",
+  "publisher_declared_license": null,
+  "referenced_license_texts": [
+    "licenses/pypi-annotated-types-0.7.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

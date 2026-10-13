@@ -1,0 +1,21 @@
+{
+  "name": "lru-cache",
+  "version": "5.1.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/lru-cache/5.1.1",
+  "artifact": "https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz",
+  "sha256": "b11e78819544a6606e3317647a5593c102ea38d3c5afae62cd63f9c2c369485a",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "ISC",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "e8e483f6965e2fffe12c42709c33d1f0843e2b798f2b2b3e882ae9fc4dc3c78e",
+  "publisher_declared_license": "ISC",
+  "referenced_license_texts": [
+    "licenses/npm-lru-cache-5.1.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

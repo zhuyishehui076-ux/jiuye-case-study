@@ -1,0 +1,21 @@
+{
+  "name": "esbuild",
+  "version": "0.25.12",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/esbuild/0.25.12",
+  "artifact": "https://registry.npmjs.org/esbuild/-/esbuild-0.25.12.tgz",
+  "sha256": "227584145829e5c4782734b3fb7b91b49c6aa12876d6cf070e6a3d9d4de543f9",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "2d519a80bfd174247d8c092d170227cb3a48674f066809580332d27abf0c2a5e",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-esbuild-0.25.12/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

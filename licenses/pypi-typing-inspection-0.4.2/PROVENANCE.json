@@ -1,0 +1,21 @@
+{
+  "name": "typing-inspection",
+  "version": "0.4.2",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/typing-inspection/0.4.2/json",
+  "artifact": "https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl",
+  "sha256": "4ed1cacbdc298c220f1bd249ed5287caa16f34d44ef4e9c3d0cbad5b521545e7",
+  "original_license_paths": [
+    "typing_inspection-0.4.2.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "18246ec4d1215822a861d39c2cacdc6b9b2d073e8da22a2414c0241fa50a1bd2",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-typing-inspection-0.4.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@esbuild/android-x64",
+  "version": "0.25.12",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40esbuild%2Fandroid-x64/0.25.12",
+  "artifact": "https://registry.npmjs.org/@esbuild/android-x64/-/android-x64-0.25.12.tgz",
+  "sha256": "1b1fb12cc646f4b641503116c52d9503ba479f00f8eeba3553e5045fd5b3e808",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "9428f81ad0e4375071212901db2714c0968e63c284f249c33787c378f04da4ba",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-esbuild-0.25.12/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

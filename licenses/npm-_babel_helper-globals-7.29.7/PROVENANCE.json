@@ -1,0 +1,21 @@
+{
+  "name": "@babel/helper-globals",
+  "version": "7.29.7",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40babel%2Fhelper-globals/7.29.7",
+  "artifact": "https://registry.npmjs.org/@babel/helper-globals/-/helper-globals-7.29.7.tgz",
+  "sha256": "94fb962c489aae2c4e5581f1494721083dc76dddd7c703314dd4d7ff965d2a3f",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "07d939e8ce186a0e5a600b960fa2ea1b6324688d41e43a12624158cd64eda93f",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_babel_helper-globals-7.29.7/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

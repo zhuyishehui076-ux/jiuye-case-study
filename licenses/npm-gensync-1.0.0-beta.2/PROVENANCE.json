@@ -1,0 +1,21 @@
+{
+  "name": "gensync",
+  "version": "1.0.0-beta.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/gensync/1.0.0-beta.2",
+  "artifact": "https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz",
+  "sha256": "df9f92ef26a35d4f92cb8a73415dfea8dadaf294a03e60e4d176df82f38d17c9",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "ce284b3efff3d6781088332d64ddd79d98a3f079689d278d85d87f2efbb24823",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-gensync-1.0.0-beta.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

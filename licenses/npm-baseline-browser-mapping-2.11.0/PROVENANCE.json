@@ -1,0 +1,21 @@
+{
+  "name": "baseline-browser-mapping",
+  "version": "2.11.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/baseline-browser-mapping/2.11.0",
+  "artifact": "https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.0.tgz",
+  "sha256": "b21cb70735b59eba424dd8efd7749321c4a83118b5143b85d9d7172535fe9294",
+  "original_license_paths": [
+    "package/LICENSE.txt"
+  ],
+  "package_redistributed": false,
+  "declared_license": "Apache-2.0",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "e2b87f18950d22645d5f456ffb169abdd2eebfa3ed7a1f17b21e1e289e893efb",
+  "publisher_declared_license": "Apache-2.0",
+  "referenced_license_texts": [
+    "licenses/npm-baseline-browser-mapping-2.11.0/01-LICENSE.txt.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

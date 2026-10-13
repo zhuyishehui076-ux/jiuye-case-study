@@ -1,0 +1,21 @@
+{
+  "name": "rc-resize-observer",
+  "version": "1.4.3",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-resize-observer/1.4.3",
+  "artifact": "https://registry.npmjs.org/rc-resize-observer/-/rc-resize-observer-1.4.3.tgz",
+  "sha256": "af4d09703e2a5fc420ed2e596ea2b5968478080e0b7813492bbd29e7388bb25a",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "1c4e6fb4a09393ee8d8197d1da2159ab478a7b9b9ffb80ab05a1c035486b0544",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-resize-observer-1.4.3/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

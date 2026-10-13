@@ -1,0 +1,21 @@
+{
+  "name": "rc-switch",
+  "version": "4.1.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-switch/4.1.0",
+  "artifact": "https://registry.npmjs.org/rc-switch/-/rc-switch-4.1.0.tgz",
+  "sha256": "d4a92f03df72ee44ccf3720c160a98bebd02db3cb0a8e5069d620b52046a2493",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "28083ffa92e302a94353304af9bbba061685ec92606bdbb88790ee0f18e6af2d",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-switch-4.1.0/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

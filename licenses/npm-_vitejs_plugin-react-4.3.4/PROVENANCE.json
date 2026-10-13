@@ -1,0 +1,21 @@
+{
+  "name": "@vitejs/plugin-react",
+  "version": "4.3.4",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40vitejs%2Fplugin-react/4.3.4",
+  "artifact": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-4.3.4.tgz",
+  "sha256": "fc5dbaedd157a2cbad566acb54125921c95a65a620badd0aa0fe7ccfb878bd5f",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "2931e87e7a249346e0272e456cc527b83bcadde94362dcb03e24bfbfc4e5acc4",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_vitejs_plugin-react-4.3.4/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

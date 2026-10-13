@@ -1,0 +1,23 @@
+{
+  "name": "lxml",
+  "version": "6.1.1",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/lxml/6.1.1/json",
+  "artifact": "https://files.pythonhosted.org/packages/61/9d/2e2f7d876349f45e0f3e29f72da311668853d59b58d473a2dea4f0160135/lxml-6.1.1-cp311-cp311-win_amd64.whl",
+  "sha256": "abbefa31eee84842140f67acef1c828e28bba8bbf0c3bc6e5492a9af88152c28",
+  "original_license_paths": [
+    "lxml-6.1.1.dist-info/licenses/LICENSE.txt",
+    "lxml-6.1.1.dist-info/licenses/LICENSES.txt"
+  ],
+  "package_redistributed": false,
+  "declared_license": "BSD-3-Clause",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "16d30a4379bc3be8c747187330c48a6e0e2900d7a2e56fe467d5dc4ee656ca13",
+  "publisher_declared_license": "BSD-3-Clause",
+  "referenced_license_texts": [
+    "licenses/pypi-lxml-6.1.1/01-LICENSE.txt.txt",
+    "licenses/pypi-lxml-6.1.1/02-LICENSES.txt.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

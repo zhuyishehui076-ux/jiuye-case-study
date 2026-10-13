@@ -1,0 +1,21 @@
+{
+  "name": "json2mq",
+  "version": "0.2.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/json2mq/0.2.0",
+  "artifact": "https://registry.npmjs.org/json2mq/-/json2mq-0.2.0.tgz",
+  "sha256": "ab82975914a201c55db631a3846d08cbee5d07fef11e50b46e6f3a9c79fa510b",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "3c99752d3f2599edd6cee7b529c96ca0181493e96dcfae3b129ee8689b46cf47",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-json2mq-0.2.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

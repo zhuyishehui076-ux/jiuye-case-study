@@ -1,0 +1,21 @@
+{
+  "name": "@ant-design/cssinjs",
+  "version": "1.24.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40ant-design%2Fcssinjs/1.24.0",
+  "artifact": "https://registry.npmjs.org/@ant-design/cssinjs/-/cssinjs-1.24.0.tgz",
+  "sha256": "3042cf4c251a120ba01821eef792be8cb298a06aef15a5e428b741e46917754c",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "9190eb52c92ea59ffc2924833a8011ea7f185268c929948403f319181c7e9b93",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_ant-design_cssinjs-1.24.0/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

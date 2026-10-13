@@ -1,0 +1,21 @@
+{
+  "name": "alembic",
+  "version": "1.14.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/alembic/1.14.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/cb/06/8b505aea3d77021b18dcbd8133aa1418f1a1e37e432a465b14c46b2c0eaa/alembic-1.14.0-py3-none-any.whl",
+  "sha256": "99bd884ca390466db5e27ffccff1d179ec5c05c965cfefc0607e69f9e411cb25",
+  "original_license_paths": [
+    "alembic-1.14.0.dist-info/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "05928008abb48e2dcf8a5fde35c30bda303d5489a42d3fd0309dd643371b1e94",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-alembic-1.14.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

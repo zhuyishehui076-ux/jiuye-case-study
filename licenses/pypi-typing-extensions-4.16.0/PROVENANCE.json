@@ -1,0 +1,21 @@
+{
+  "name": "typing-extensions",
+  "version": "4.16.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/typing-extensions/4.16.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+  "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+  "original_license_paths": [
+    "typing_extensions-4.16.0.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "PSF-2.0",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "2140da00d62dde967f52d0be0ae28444f1d6a3fe603f52c83c23988c32122d5a",
+  "publisher_declared_license": "PSF-2.0",
+  "referenced_license_texts": [
+    "licenses/pypi-typing-extensions-4.16.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

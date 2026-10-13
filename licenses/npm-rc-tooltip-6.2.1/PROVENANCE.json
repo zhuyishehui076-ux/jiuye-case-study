@@ -1,0 +1,21 @@
+{
+  "name": "rc-tooltip",
+  "version": "6.2.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-tooltip/6.2.1",
+  "artifact": "https://registry.npmjs.org/rc-tooltip/-/rc-tooltip-6.2.1.tgz",
+  "sha256": "37e280f7cfcf9cf575a8e3059318fce8c5faec69b75c91431a7e349a65955134",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "c0a25b1dcb533cc6f4af23f1541c8c4d0d7e3ea86347279297bae0b1e508955a",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-tooltip-6.2.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

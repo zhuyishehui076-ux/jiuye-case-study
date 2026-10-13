@@ -1,0 +1,21 @@
+{
+  "name": "tinyglobby",
+  "version": "0.2.17",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/tinyglobby/0.2.17",
+  "artifact": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz",
+  "sha256": "afb4afae9175f8b873ac13e1d21cea0997a0bcb40c3598613a834490058cb562",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "418710fc9fbf23a1dd44eb53d2ed9a3048a868e0b409ac78d4a036119ebf773a",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-tinyglobby-0.2.17/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

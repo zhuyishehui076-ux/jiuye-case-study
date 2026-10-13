@@ -1,0 +1,21 @@
+{
+  "name": "react-refresh",
+  "version": "0.14.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/react-refresh/0.14.2",
+  "artifact": "https://registry.npmjs.org/react-refresh/-/react-refresh-0.14.2.tgz",
+  "sha256": "c504db3a5043fdec8251c84fa2d83002489273338abcc408c667f60f412f3e5b",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "d0f88bd5f8d315d8ca5b08207fe9dec379c147707ff8fcd6995ea19c957107af",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-react-refresh-0.14.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

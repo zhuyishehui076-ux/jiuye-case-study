@@ -1,0 +1,21 @@
+{
+  "name": "has-tostringtag",
+  "version": "1.0.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/has-tostringtag/1.0.2",
+  "artifact": "https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz",
+  "sha256": "dc1c74e3f1179a6271f84747d72c89f258aa46ad3e6464fae0e41737a7f0ef7b",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "ad85b3d50be47882dc2fa4e8a3e77479a9dcc6526aa6963ec8765cb7e67aedc8",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-has-tostringtag-1.0.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

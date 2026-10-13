@@ -1,0 +1,21 @@
+{
+  "name": "@types/prop-types",
+  "version": "15.7.15",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40types%2Fprop-types/15.7.15",
+  "artifact": "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.15.tgz",
+  "sha256": "6a917895a313fc1d3c161c28fe39970c10bf2344cbb62e6eb7e9105c7ef43f62",
+  "original_license_paths": [
+    "prop-types/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "aeb1a381e94edc1e713c5552b2afe08d52821109da102b8a55745130ef1460a4",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_types_prop-types-15.7.15/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

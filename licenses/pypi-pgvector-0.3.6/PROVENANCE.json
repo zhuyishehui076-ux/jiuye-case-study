@@ -1,0 +1,21 @@
+{
+  "name": "pgvector",
+  "version": "0.3.6",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/pgvector/0.3.6/json",
+  "artifact": "https://files.pythonhosted.org/packages/fb/81/f457d6d361e04d061bef413749a6e1ab04d98cfeec6d8abcfe40184750f3/pgvector-0.3.6-py3-none-any.whl",
+  "sha256": "f6c269b3c110ccb7496bac87202148ed18f34b390a0189c783e351062400a75a",
+  "original_license_paths": [
+    "pgvector-0.3.6.dist-info/LICENSE.txt"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "b9e87131cbc02d3883e3b31d92bf561c820b7e380ded7a4d627dc633eee57752",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-pgvector-0.3.6/01-LICENSE.txt.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

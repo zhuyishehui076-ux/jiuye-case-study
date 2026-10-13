@@ -1,0 +1,21 @@
+{
+  "name": "function-bind",
+  "version": "1.1.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/function-bind/1.1.2",
+  "artifact": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz",
+  "sha256": "704402651b02a1454f17d445fc7dd716efc282d059407126d58ef30a47e807aa",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "4b88e60f517cc77407919fbf88e29d872c5d704be9d18adae0f42521ab4cea8d",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-function-bind-1.1.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

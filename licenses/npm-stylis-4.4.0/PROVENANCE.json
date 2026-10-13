@@ -1,0 +1,21 @@
+{
+  "name": "stylis",
+  "version": "4.4.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/stylis/4.4.0",
+  "artifact": "https://registry.npmjs.org/stylis/-/stylis-4.4.0.tgz",
+  "sha256": "95a1c7a5b16c5e7ce8898c1d7d9414255a3b26fd96b7b0cee4c863011df67f0c",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "67fbe6f16c3efcd7cec3ea029c3b81450fe2a3ffa63e5fe2506dd98db2848cf2",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-stylis-4.4.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

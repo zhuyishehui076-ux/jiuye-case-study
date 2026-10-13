@@ -1,0 +1,21 @@
+{
+  "name": "pydantic-settings",
+  "version": "2.7.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/pydantic-settings/2.7.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/f9/00/57b4540deb5c3a39ba689bb519a4e03124b24ab8589e618be4aac2c769bd/pydantic_settings-2.7.0-py3-none-any.whl",
+  "sha256": "e00c05d5fa6cbbb227c84bd7487c5c1065084119b750df7c8c1a554aed236eb5",
+  "original_license_paths": [
+    "pydantic_settings-2.7.0.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "8b621abf347c9a0c8ca1620787da9e95c4a929ea809769a71edd9bdbd4c8e815",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-pydantic-settings-2.7.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

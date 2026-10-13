@@ -1,0 +1,21 @@
+{
+  "name": "rc-select",
+  "version": "14.16.8",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-select/14.16.8",
+  "artifact": "https://registry.npmjs.org/rc-select/-/rc-select-14.16.8.tgz",
+  "sha256": "2f10ea6f6ff959eb29000aa4fef99a0e2b6ddc60467d9f4574c0360d283ba100",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "79f9dae8623d13bcca94cfd0619942cfce541459fb9f2bdc2f660aa0e1afe554",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-select-14.16.8/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

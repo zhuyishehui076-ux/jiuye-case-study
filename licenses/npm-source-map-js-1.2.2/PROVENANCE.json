@@ -1,0 +1,21 @@
+{
+  "name": "source-map-js",
+  "version": "1.2.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/source-map-js/1.2.2",
+  "artifact": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.2.tgz",
+  "sha256": "05c8cf8e7c3a6b56cada7668fe9342b10f4b625efc92aba9ba05b9e8fe4d71a3",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "BSD-3-Clause",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "2a7a225c550e3a0e75f9af72a635e33d7b2e4a0fca4f596679a2775971f53ed6",
+  "publisher_declared_license": "BSD-3-Clause",
+  "referenced_license_texts": [
+    "licenses/npm-source-map-js-1.2.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

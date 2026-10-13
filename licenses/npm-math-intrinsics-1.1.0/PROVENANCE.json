@@ -1,0 +1,21 @@
+{
+  "name": "math-intrinsics",
+  "version": "1.1.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/math-intrinsics/1.1.0",
+  "artifact": "https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz",
+  "sha256": "b8c2c35575493dc086df88cfc468a9e2651b6617336480ab3f00fcf853f443a7",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "b0d4d1b1fa7db9623764175e1c7dfa7fc7ec3b0f360d9962901fb899782d5414",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-math-intrinsics-1.1.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

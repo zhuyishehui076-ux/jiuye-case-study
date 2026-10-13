@@ -1,0 +1,21 @@
+{
+  "name": "httpx",
+  "version": "0.28.1",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/httpx/0.28.1/json",
+  "artifact": "https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl",
+  "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+  "original_license_paths": [
+    "httpx-0.28.1.dist-info/licenses/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "BSD-3-Clause",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "293bfab7bf587fcd0825f1bd8eed8e6303285ba14801b15659853827cbe30796",
+  "publisher_declared_license": "BSD-3-Clause",
+  "referenced_license_texts": [
+    "licenses/pypi-httpx-0.28.1/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

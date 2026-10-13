@@ -1,0 +1,21 @@
+{
+  "name": "rc-tree-select",
+  "version": "5.24.5",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-tree-select/5.24.5",
+  "artifact": "https://registry.npmjs.org/rc-tree-select/-/rc-tree-select-5.24.5.tgz",
+  "sha256": "2d25bf3a790e9541b3609b13da69856ebb8891ec1a40e6e2e8d8a8fabdef3f33",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "11cda0035cbaccb101018e5cbb1aafd2cbb64d4e5c6223c049ecac368d203a66",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-tree-select-5.24.5/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

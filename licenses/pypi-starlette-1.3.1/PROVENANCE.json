@@ -1,0 +1,21 @@
+{
+  "name": "starlette",
+  "version": "1.3.1",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/starlette/1.3.1/json",
+  "artifact": "https://files.pythonhosted.org/packages/ec/bb/2799cc2ede3ed41131f8975621e7213dfc7ef4acbbaadfa440f32500c370/starlette-1.3.1-py3-none-any.whl",
+  "sha256": "c7372aae11c3c3f26a42df7bd626cec2f47d03483d261d369516a615a53714c6",
+  "original_license_paths": [
+    "starlette-1.3.1.dist-info/licenses/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "BSD-3-Clause",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "690dcec4eaf8dab692302c9e99ea982f19ad376cc1a5f248474ae0945553c2dc",
+  "publisher_declared_license": "BSD-3-Clause",
+  "referenced_license_texts": [
+    "licenses/pypi-starlette-1.3.1/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

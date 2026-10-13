@@ -1,0 +1,25 @@
+{
+  "name": "httptools",
+  "version": "0.8.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/httptools/0.8.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/cc/94/97b75870dea07b71e3ec535cebe525b08d723152e4c7d13fa887e51f4de2/httptools-0.8.0-cp311-cp311-win_amd64.whl",
+  "sha256": "a1b4c8e7a489a0d750d91894e9a8cdc295838f1924c0ca903ae993456fddec07",
+  "original_license_paths": [
+    "httptools-0.8.0.dist-info/licenses/LICENSE",
+    "httptools-0.8.0.dist-info/licenses/vendor/http-parser/LICENSE-MIT",
+    "httptools-0.8.0.dist-info/licenses/vendor/llhttp/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "e698f95358eb28b7cf1d1c0d33362c65e7aca3ca4613fecfc997362b7a8e6b78",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-httptools-0.8.0/01-LICENSE.txt",
+    "licenses/pypi-httptools-0.8.0/02-LICENSE-MIT.txt",
+    "licenses/pypi-httptools-0.8.0/03-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

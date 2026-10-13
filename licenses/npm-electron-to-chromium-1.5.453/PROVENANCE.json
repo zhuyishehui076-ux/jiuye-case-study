@@ -1,0 +1,21 @@
+{
+  "name": "electron-to-chromium",
+  "version": "1.5.453",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/electron-to-chromium/1.5.453",
+  "artifact": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.453.tgz",
+  "sha256": "0be25e8ae087f04d32feb90055236b14d77bd17103ccc835a92b60ae8eae88ad",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "ISC",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "93515ffe572736b0f60f84adb2ed7115983e567cbf68b06a96f8a5c392faf111",
+  "publisher_declared_license": "ISC",
+  "referenced_license_texts": [
+    "licenses/npm-electron-to-chromium-1.5.453/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

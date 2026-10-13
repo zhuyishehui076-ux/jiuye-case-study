@@ -1,0 +1,23 @@
+{
+  "name": "greenlet",
+  "version": "3.5.3",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/greenlet/3.5.3/json",
+  "artifact": "https://files.pythonhosted.org/packages/1c/35/f0d8ee998b422cf8693b270f098e55d8d4ec8006b061b333f54f177d28d9/greenlet-3.5.3-cp311-cp311-win_amd64.whl",
+  "sha256": "0f41e4a05a3c0cb31b17023eff28dd111e1d16bf7d7d00406cd7df23f31398a7",
+  "original_license_paths": [
+    "greenlet-3.5.3.dist-info/licenses/LICENSE",
+    "greenlet-3.5.3.dist-info/licenses/LICENSE.PSF"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT AND PSF-2.0",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "7720fc8e5e46ca3e3cb768232b3a7aa901a89209d50ed09c42207b283085df86",
+  "publisher_declared_license": "MIT AND PSF-2.0",
+  "referenced_license_texts": [
+    "licenses/pypi-greenlet-3.5.3/01-LICENSE.txt",
+    "licenses/pypi-greenlet-3.5.3/02-LICENSE.PSF.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

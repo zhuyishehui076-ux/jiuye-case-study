@@ -1,0 +1,21 @@
+{
+  "name": "psycopg",
+  "version": "3.2.3",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/psycopg/3.2.3/json",
+  "artifact": "https://files.pythonhosted.org/packages/ce/21/534b8f5bd9734b7a2fcd3a16b1ee82ef6cad81a4796e95ebf4e0c6a24119/psycopg-3.2.3-py3-none-any.whl",
+  "sha256": "644d3973fe26908c73d4be746074f6e5224b03c1101d302d9a53bf565ad64907",
+  "original_license_paths": [
+    "psycopg-3.2.3.dist-info/LICENSE.txt"
+  ],
+  "package_redistributed": false,
+  "declared_license": "GNU Lesser General Public License v3 (LGPLv3)",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "060a3d3bd0ce4656d0adc43738d9ca3561c9a8a003624aab33ab2718eae40b12",
+  "publisher_declared_license": "GNU Lesser General Public License v3 (LGPLv3)",
+  "referenced_license_texts": [
+    "licenses/pypi-psycopg-3.2.3/01-LICENSE.txt.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

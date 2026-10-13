@@ -1,0 +1,21 @@
+{
+  "name": "@rc-component/trigger",
+  "version": "2.3.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rc-component%2Ftrigger/2.3.1",
+  "artifact": "https://registry.npmjs.org/@rc-component/trigger/-/trigger-2.3.1.tgz",
+  "sha256": "e65c8cbc0e0a36408ac3f88cd87a713f2d09400359d7357befa11bc96e66088f",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "1688013020dff37b3e0d61d6db0377ba76928f2aacc336a9551e666d86242270",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_rc-component_trigger-2.3.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

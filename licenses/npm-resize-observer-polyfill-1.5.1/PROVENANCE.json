@@ -1,0 +1,21 @@
+{
+  "name": "resize-observer-polyfill",
+  "version": "1.5.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/resize-observer-polyfill/1.5.1",
+  "artifact": "https://registry.npmjs.org/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz",
+  "sha256": "40fcbb21fabb32098277c04b9afce8b1f0d45a0c37ae9bd968482dc59076fa8d",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "fe7689ccad437eae38f578839fbcd1930a7d7acd576a8e761b86e31fe6b9e351",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-resize-observer-polyfill-1.5.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

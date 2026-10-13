@@ -1,0 +1,21 @@
+{
+  "name": "pluggy",
+  "version": "1.6.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/pluggy/1.6.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/54/20/4d324d65cc6d9205fabedc306948156824eb9f0ee1633355a8f7ec5c66bf/pluggy-1.6.0-py3-none-any.whl",
+  "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+  "original_license_paths": [
+    "pluggy-1.6.0.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "db23d1227f5870da7538b1e29371d9fc9a93b0499989f8e3ef021fdccd75bc8e",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-pluggy-1.6.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

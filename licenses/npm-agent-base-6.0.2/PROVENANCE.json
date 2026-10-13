@@ -1,0 +1,19 @@
+{
+  "name": "agent-base",
+  "version": "6.0.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/agent-base/6.0.2",
+  "artifact": "https://registry.npmjs.org/agent-base/-/agent-base-6.0.2.tgz",
+  "sha256": "bc6da06f2a2e6bc80fa5878bd7227bd0318812976d45f47f17e1aafcec2be831",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_README_LICENSE_CAPTURED",
+  "registry_metadata_sha256": "b4670f909dc2ae3092fee34a0c817e721ca1a6a85b3735d748e8ac78228146a0",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-agent-base-6.0.2/README-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

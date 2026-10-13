@@ -1,0 +1,21 @@
+{
+  "name": "react-router",
+  "version": "6.30.6",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/react-router/6.30.6",
+  "artifact": "https://registry.npmjs.org/react-router/-/react-router-6.30.6.tgz",
+  "sha256": "3ae19d702c95656b46dcadc5a64f3df61be559cf2e14c176b04d5d233c13c0b8",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "66c4b3f04d4746a3f524fa52baf91c18dc276526d9be1cc12029d16a167e28df",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-react-router-6.30.6/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

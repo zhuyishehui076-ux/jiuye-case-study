@@ -1,0 +1,21 @@
+{
+  "name": "rc-checkbox",
+  "version": "3.3.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-checkbox/3.3.0",
+  "artifact": "https://registry.npmjs.org/rc-checkbox/-/rc-checkbox-3.3.0.tgz",
+  "sha256": "d11ed932dfbe00713be15a65b09f75f4f7b4ce5916cd2c1c95e5456e78248267",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "4b0f5ca15249da4598235980b73624cc4d32fa48d9817ecffccff426915c753f",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-checkbox-3.3.0/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

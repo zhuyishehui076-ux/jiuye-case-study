@@ -1,0 +1,19 @@
+{
+  "name": "@rollup/rollup-linux-x64-musl",
+  "version": "4.62.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rollup%2Frollup-linux-x64-musl/4.62.2",
+  "artifact": "https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.62.2.tgz",
+  "sha256": "0d61c4745bfa74793229f99bdf8ad7d5d88d059d9fe29b2248acab82e7bd4c8b",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "82acb235d6e8868c4db023f265cf28d473b5bdf6cd29f107ecaa888f5562c5a8",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rollup-4.62.2/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

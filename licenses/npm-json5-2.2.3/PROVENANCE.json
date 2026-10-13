@@ -1,0 +1,21 @@
+{
+  "name": "json5",
+  "version": "2.2.3",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/json5/2.2.3",
+  "artifact": "https://registry.npmjs.org/json5/-/json5-2.2.3.tgz",
+  "sha256": "08afb33db600d11fc89b98fac4054f19d5d3e0fe527063116150e1ecc2d2377b",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "775402cf4d2ca885a5b12b103924f27f0d567cbf9ef33f528b5ee208629af866",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-json5-2.2.3/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@esbuild/freebsd-x64",
+  "version": "0.25.12",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40esbuild%2Ffreebsd-x64/0.25.12",
+  "artifact": "https://registry.npmjs.org/@esbuild/freebsd-x64/-/freebsd-x64-0.25.12.tgz",
+  "sha256": "8bf2618e0ff33e342c68f5c9f56dde969551daaea3c89dd30d5859abe066b2a2",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "017be07c370f6a72a8949e24df2af54a82afcd524692dfcaf010eda764a2422e",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-esbuild-0.25.12/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

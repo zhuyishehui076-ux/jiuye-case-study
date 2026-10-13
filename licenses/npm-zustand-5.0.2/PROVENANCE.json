@@ -1,0 +1,21 @@
+{
+  "name": "zustand",
+  "version": "5.0.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/zustand/5.0.2",
+  "artifact": "https://registry.npmjs.org/zustand/-/zustand-5.0.2.tgz",
+  "sha256": "03c4d9bbc5d48d82ebd91f57a1df42416f3641f8ea38953ef900c1397e094600",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "44ebc20e771afe25bef9441d80ba67b7641e2aba86fd4b8a6345a5314e578570",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-zustand-5.0.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "loose-envify",
+  "version": "1.4.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/loose-envify/1.4.0",
+  "artifact": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz",
+  "sha256": "1218830a93538a4f730d530138e945ea6a65b45e099ee7a9ea538a05141babdc",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "85e0820c2672904ee6abc255ef47caaf476329aa9fe8c2308f750afc01978940",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-loose-envify-1.4.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

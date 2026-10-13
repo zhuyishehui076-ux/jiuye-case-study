@@ -1,0 +1,21 @@
+{
+  "name": "node-releases",
+  "version": "2.0.58",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/node-releases/2.0.58",
+  "artifact": "https://registry.npmjs.org/node-releases/-/node-releases-2.0.58.tgz",
+  "sha256": "cb14337d8be7df54fb135a622176ed68eb71f62ad36cf81f637dfdeb3a154eef",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "8b547e8e604233c5dcf27fd91d1a30fe9848f38fe5341bcab79650267a023cf5",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-node-releases-2.0.58/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

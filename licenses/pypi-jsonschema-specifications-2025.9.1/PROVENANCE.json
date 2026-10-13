@@ -1,0 +1,21 @@
+{
+  "name": "jsonschema-specifications",
+  "version": "2025.9.1",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/jsonschema-specifications/2025.9.1/json",
+  "artifact": "https://files.pythonhosted.org/packages/41/45/1a4ed80516f02155c51f51e8cedb3c1902296743db0bbc66608a0db2814f/jsonschema_specifications-2025.9.1-py3-none-any.whl",
+  "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe",
+  "original_license_paths": [
+    "jsonschema_specifications-2025.9.1.dist-info/licenses/COPYING"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "91810d8f79384375ad0c0cf631e06903e2790b030d3fad2f1ad657b20ddd839e",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-jsonschema-specifications-2025.9.1/01-COPYING.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

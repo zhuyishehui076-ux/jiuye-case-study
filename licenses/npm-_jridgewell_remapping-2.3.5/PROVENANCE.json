@@ -1,0 +1,21 @@
+{
+  "name": "@jridgewell/remapping",
+  "version": "2.3.5",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40jridgewell%2Fremapping/2.3.5",
+  "artifact": "https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz",
+  "sha256": "70b16782a39ad16672e47c33473559a25bff9640214df91cb9dd153005d71a02",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "51e582cec6f9fc2cf5d89e1091d9833d8a0f8aaeca9b42c87e75515bacdfee6d",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_jridgewell_remapping-2.3.5/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

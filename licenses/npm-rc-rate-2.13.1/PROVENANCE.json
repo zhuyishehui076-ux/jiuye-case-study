@@ -1,0 +1,21 @@
+{
+  "name": "rc-rate",
+  "version": "2.13.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-rate/2.13.1",
+  "artifact": "https://registry.npmjs.org/rc-rate/-/rc-rate-2.13.1.tgz",
+  "sha256": "a9e132f85fbc0a1eac7ef49cc08a85fd2550749fdb246929dfbcb0cd11671dbb",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "4752851b7cceab61e835e5c58b7ba3bf9b3a08db6136324ccc4e48c8594755c7",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-rate-2.13.1/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

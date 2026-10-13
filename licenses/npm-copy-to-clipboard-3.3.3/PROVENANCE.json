@@ -1,0 +1,21 @@
+{
+  "name": "copy-to-clipboard",
+  "version": "3.3.3",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/copy-to-clipboard/3.3.3",
+  "artifact": "https://registry.npmjs.org/copy-to-clipboard/-/copy-to-clipboard-3.3.3.tgz",
+  "sha256": "a2b2aa1141d9acbaa8732930994fb670949476197e5f07343e48f40ddf6cc4b0",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "1fc3fc22acb06c9b1cab0eb9e38ea0ea2b92328d019250baa8b2e8390d211e16",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-copy-to-clipboard-3.3.3/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

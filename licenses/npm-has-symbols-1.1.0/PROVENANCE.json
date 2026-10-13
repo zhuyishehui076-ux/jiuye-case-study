@@ -1,0 +1,21 @@
+{
+  "name": "has-symbols",
+  "version": "1.1.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/has-symbols/1.1.0",
+  "artifact": "https://registry.npmjs.org/has-symbols/-/has-symbols-1.1.0.tgz",
+  "sha256": "4460c7532f28b8df2ddc9a1ec17816d43c24d4b9591dc6c5936b82f7f86ae7c5",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "5155bf0ef6ac3abad440e473659fe1e36457820e5c181b488feca9769b3ec295",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-has-symbols-1.1.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

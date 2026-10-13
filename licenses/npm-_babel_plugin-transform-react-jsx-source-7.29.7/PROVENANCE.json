@@ -1,0 +1,21 @@
+{
+  "name": "@babel/plugin-transform-react-jsx-source",
+  "version": "7.29.7",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40babel%2Fplugin-transform-react-jsx-source/7.29.7",
+  "artifact": "https://registry.npmjs.org/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.29.7.tgz",
+  "sha256": "8afa100bf1bafc073813b589980414576b20c66bf3598af229d30b92183fa1a9",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "19e968e87d7ca71cbe208a2db14343cb08d946524b68a6fde6de373f419953f5",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_babel_plugin-transform-react-jsx-source-7.29.7/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

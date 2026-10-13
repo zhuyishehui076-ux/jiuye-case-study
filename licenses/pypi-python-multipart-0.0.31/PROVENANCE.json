@@ -1,0 +1,21 @@
+{
+  "name": "python-multipart",
+  "version": "0.0.31",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/python-multipart/0.0.31/json",
+  "artifact": "https://files.pythonhosted.org/packages/5e/1e/7f7f299527a5a8ad90acd5f2f78dfa6c8495c6301a3205106ea68a84de96/python_multipart-0.0.31-py3-none-any.whl",
+  "sha256": "8408153d68a9773291fc1da39a8b85a50044bddbabd2dd72e9229776b7b15e28",
+  "original_license_paths": [
+    "python_multipart-0.0.31.dist-info/licenses/LICENSE.txt"
+  ],
+  "package_redistributed": false,
+  "declared_license": "Apache-2.0",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "9ad9d88b108a252a1bc9d3536a9b3b9f611855c32cf9f308f40b1059f457899d",
+  "publisher_declared_license": "Apache-2.0",
+  "referenced_license_texts": [
+    "licenses/pypi-python-multipart-0.0.31/01-LICENSE.txt.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@ctrl/tinycolor",
+  "version": "3.6.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40ctrl%2Ftinycolor/3.6.1",
+  "artifact": "https://registry.npmjs.org/@ctrl/tinycolor/-/tinycolor-3.6.1.tgz",
+  "sha256": "2b846156754d9bd6569ecf04ff6fafc6d66a9e18d7d5dff72f2651d293432c75",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "b7f665b51aaef3ed65ba600112938a01d90e8abbe88dfd7c8af11ef0df03a3fb",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_ctrl_tinycolor-3.6.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

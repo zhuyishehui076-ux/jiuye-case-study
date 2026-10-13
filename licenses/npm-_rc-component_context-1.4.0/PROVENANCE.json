@@ -1,0 +1,21 @@
+{
+  "name": "@rc-component/context",
+  "version": "1.4.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rc-component%2Fcontext/1.4.0",
+  "artifact": "https://registry.npmjs.org/@rc-component/context/-/context-1.4.0.tgz",
+  "sha256": "6a40eb6d87be921d4575aa239f76f2644d7ae9d57ee19dd2b8408f757d6eb128",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "3b2261fc08f0bea6106c29ee8685029d4f78539f2631168116d2b5c001f2c0b3",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_rc-component_context-1.4.0/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "watchfiles",
+  "version": "1.2.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/watchfiles/1.2.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/cf/99/2b04981977fc2608afd60360d928c6aecf6b950292ca221d98f4005f6694/watchfiles-1.2.0-cp311-cp311-win_amd64.whl",
+  "sha256": "dbd6c97045dad81227c8d040173da044c1de08de64a5ea8b555da4aee1d5fa22",
+  "original_license_paths": [
+    "watchfiles-1.2.0.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "178ddabbac1b454edc3c93620546cf25dfa9efbdadb28e63b912688963d1b068",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-watchfiles-1.2.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

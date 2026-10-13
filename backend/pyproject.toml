@@ -1,0 +1,26 @@
+[project]
+name = "jiuye-backend"
+version = "0.1.0"
+description = "就业数智系统 backend"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["."]
+# Alembic 迁移为自动生成脚本，不纳入 lint（模板风格不受本项目规约约束）
+extend-exclude = ["alembic/versions"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "B", "ARG"]
+# B008: FastAPI 依赖注入依赖 Depends(...) 出现在默认值，属惯用法，全局豁免
+ignore = ["E501", "B008"]
+
+[tool.ruff.lint.per-file-ignores]
+# pytest 夹具通过参数注入以建立依赖顺序，非"未使用参数"
+"tests/**" = ["ARG001"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"

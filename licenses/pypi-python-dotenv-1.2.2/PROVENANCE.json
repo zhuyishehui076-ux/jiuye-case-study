@@ -1,0 +1,21 @@
+{
+  "name": "python-dotenv",
+  "version": "1.2.2",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/python-dotenv/1.2.2/json",
+  "artifact": "https://files.pythonhosted.org/packages/0b/d7/1959b9648791274998a9c3526f6d0ec8fd2233e4d4acce81bbae76b44b2a/python_dotenv-1.2.2-py3-none-any.whl",
+  "sha256": "1d8214789a24de455a8b8bd8ae6fe3c6b69a5e3d64aa8a8e5d68e694bbcb285a",
+  "original_license_paths": [
+    "python_dotenv-1.2.2.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "BSD-3-Clause",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "55369bf96ade24497fac32db046405f479554069d4661ff2f8b72a174b1c5e01",
+  "publisher_declared_license": "BSD-3-Clause",
+  "referenced_license_texts": [
+    "licenses/pypi-python-dotenv-1.2.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

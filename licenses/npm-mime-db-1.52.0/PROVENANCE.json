@@ -1,0 +1,21 @@
+{
+  "name": "mime-db",
+  "version": "1.52.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/mime-db/1.52.0",
+  "artifact": "https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz",
+  "sha256": "b8e70bb4d52acd5d0d1ed848c0e6e3c903a533aa500acffbe003f011b18f9e3b",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "ac27de570847e2c806615f8ea3acb20ced6a0fe22864f3c124780b245e71cdf5",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-mime-db-1.52.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

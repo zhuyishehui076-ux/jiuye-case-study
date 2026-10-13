@@ -1,0 +1,21 @@
+{
+  "name": "rc-mentions",
+  "version": "2.17.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-mentions/2.17.0",
+  "artifact": "https://registry.npmjs.org/rc-mentions/-/rc-mentions-2.17.0.tgz",
+  "sha256": "af6f362ab485c5c34ee42185a431abb87840ae9c30f72d72f4edb8e6cb452a97",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "cb171d06d87538a35a04993add817b15888a06712ed4a4b4b93a0b8abfc9c83d",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-mentions-2.17.0/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

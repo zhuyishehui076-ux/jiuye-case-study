@@ -1,0 +1,19 @@
+{
+  "name": "@esbuild/win32-ia32",
+  "version": "0.25.12",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40esbuild%2Fwin32-ia32/0.25.12",
+  "artifact": "https://registry.npmjs.org/@esbuild/win32-ia32/-/win32-ia32-0.25.12.tgz",
+  "sha256": "a0b88687c8262d88922c08f9aa70f5a8d2d5bf38309046a1b718fc8eb7ad4872",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "6cfd4d585d51aaac8f97669e854ddd855878f9c4c469efe766e7b10a0fddc1ab",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-esbuild-0.25.12/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

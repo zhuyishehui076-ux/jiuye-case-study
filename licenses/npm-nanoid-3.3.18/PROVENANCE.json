@@ -1,0 +1,21 @@
+{
+  "name": "nanoid",
+  "version": "3.3.18",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/nanoid/3.3.18",
+  "artifact": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.18.tgz",
+  "sha256": "b9dc81cb403ea2510314dd2d1ad8d71934f325db90c1b43805e781b87e3fb009",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "e068b45312ea854dd1b79c57aff7b7bc19966a7a36e3ccf2f5799c02a65710e4",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-nanoid-3.3.18/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

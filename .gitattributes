@@ -1,0 +1,17 @@
+# 统一文本换行，保证 .sh 在 Linux CI/容器内以 LF 运行（避免 CRLF 破坏 shebang）
+* text=auto eol=lf
+
+*.sh    text eol=lf
+*.py    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+Dockerfile text eol=lf
+
+# 二进制
+*.png binary
+*.jpg binary
+*.tar binary
+
+# Preserve third-party evidence bytes exactly, including original line endings.
+licenses/** -text
+LICENSE -text

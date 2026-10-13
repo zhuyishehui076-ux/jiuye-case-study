@@ -1,0 +1,23 @@
+{
+  "name": "uvloop",
+  "version": "0.23.0",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/uvloop/0.23.0/json",
+  "artifact": "https://files.pythonhosted.org/packages/25/0d/b5f69dae3736d96a8753c6ecd32d676ecd212be7ba3252e9c379ad9cc05c/uvloop-0.23.0-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+  "sha256": "8fcd721113260ffb5e38bf14a8725b17d431f34209f7d1c7005b667946e630b3",
+  "original_license_paths": [
+    "uvloop-0.23.0.dist-info/licenses/LICENSE-APACHE",
+    "uvloop-0.23.0.dist-info/licenses/LICENSE-MIT"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT License",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "32406ae3cbefbdc83a9b713ba9a4cee587513f1919e1a0e3bb42e0ae6986caae",
+  "publisher_declared_license": "MIT License",
+  "referenced_license_texts": [
+    "licenses/pypi-uvloop-0.23.0/01-LICENSE-APACHE.txt",
+    "licenses/pypi-uvloop-0.23.0/02-LICENSE-MIT.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

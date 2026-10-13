@@ -1,0 +1,21 @@
+{
+  "name": "@rc-component/tour",
+  "version": "1.15.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rc-component%2Ftour/1.15.1",
+  "artifact": "https://registry.npmjs.org/@rc-component/tour/-/tour-1.15.1.tgz",
+  "sha256": "e04acd5cda0c49ffc4860e327a589a0b1d43ed6d6ac1876988b650cef2e416f6",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "0834b768cee5bacf7366ff5e492d9c8dbb666bba0791a93791bc6449ca5b0d8a",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_rc-component_tour-1.15.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

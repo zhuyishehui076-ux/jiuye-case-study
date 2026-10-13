@@ -1,0 +1,21 @@
+{
+  "name": "rc-table",
+  "version": "7.49.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-table/7.49.0",
+  "artifact": "https://registry.npmjs.org/rc-table/-/rc-table-7.49.0.tgz",
+  "sha256": "14eec7ac8fec0cc528c54a47efd4b0e14655da8add37385facf92b687d28bb5a",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "cde7812fbbac0e8393bdf842cbda1eb7e53fefb4c820f3cc3ccab97550cd39cd",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-table-7.49.0/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

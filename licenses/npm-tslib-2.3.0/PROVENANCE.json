@@ -1,0 +1,23 @@
+{
+  "name": "tslib",
+  "version": "2.3.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/tslib/2.3.0",
+  "artifact": "https://registry.npmjs.org/tslib/-/tslib-2.3.0.tgz",
+  "sha256": "ae285639feff7e3c39de4626352181a5d73b815725e42639b411c43848abffdb",
+  "original_license_paths": [
+    "package/CopyrightNotice.txt",
+    "package/LICENSE.txt"
+  ],
+  "package_redistributed": false,
+  "declared_license": "0BSD",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "b68c0caed2d3df936d5592af3ee9a8c83a646dc102c66c89ace62bf264372741",
+  "publisher_declared_license": "0BSD",
+  "referenced_license_texts": [
+    "licenses/npm-tslib-2.3.0/01-CopyrightNotice.txt.txt",
+    "licenses/npm-tslib-2.3.0/02-LICENSE.txt.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

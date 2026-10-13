@@ -1,0 +1,21 @@
+{
+  "name": "@babel/helper-module-transforms",
+  "version": "7.29.7",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40babel%2Fhelper-module-transforms/7.29.7",
+  "artifact": "https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.29.7.tgz",
+  "sha256": "dbb3b9b10b0a2828f5af58a6317685b1a150464c6bd54995069c526aba45e6e4",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "1ff9cce4f55647d3080f487d57cb7f942bc9061fb82804b83db0b20f401089d3",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_babel_helper-module-transforms-7.29.7/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

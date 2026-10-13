@@ -1,0 +1,21 @@
+{
+  "name": "postcss",
+  "version": "8.5.23",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/postcss/8.5.23",
+  "artifact": "https://registry.npmjs.org/postcss/-/postcss-8.5.23.tgz",
+  "sha256": "d2cf324ff10baf8c34e1c79309bf2bfe15ee9b6e957f665737b9a9604c0744f1",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "b33e1ab1884aa470afb3811f1fc80aebd60732caefd845e37437139453fa91ab",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-postcss-8.5.23/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

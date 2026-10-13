@@ -1,0 +1,21 @@
+{
+  "name": "form-data",
+  "version": "4.0.6",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/form-data/4.0.6",
+  "artifact": "https://registry.npmjs.org/form-data/-/form-data-4.0.6.tgz",
+  "sha256": "fc4d94e9b629f5378367ba46da7d96115696c01e25c99cd57c2c9a3d098bb557",
+  "original_license_paths": [
+    "package/License"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "2e40e74e977b2ce74f0d109bd38e21f26acdea82cd6b187d582bf61a4e55dd86",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-form-data-4.0.6/01-License.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

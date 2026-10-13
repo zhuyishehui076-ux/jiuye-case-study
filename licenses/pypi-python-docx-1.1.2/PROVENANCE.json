@@ -1,0 +1,21 @@
+{
+  "name": "python-docx",
+  "version": "1.1.2",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/python-docx/1.1.2/json",
+  "artifact": "https://files.pythonhosted.org/packages/3e/3d/330d9efbdb816d3f60bf2ad92f05e1708e4a1b9abe80461ac3444c83f749/python_docx-1.1.2-py3-none-any.whl",
+  "sha256": "08c20d6058916fb19853fcf080f7f42b6270d89eac9fa5f8c15f691c0017fabe",
+  "original_license_paths": [
+    "python_docx-1.1.2.dist-info/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "9a7c0f17fb93b8cf7458de91e4398346c57e89b3ef7e199740f574a427e25998",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-python-docx-1.1.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

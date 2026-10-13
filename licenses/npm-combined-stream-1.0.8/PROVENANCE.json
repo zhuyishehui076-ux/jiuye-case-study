@@ -1,0 +1,21 @@
+{
+  "name": "combined-stream",
+  "version": "1.0.8",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/combined-stream/1.0.8",
+  "artifact": "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz",
+  "sha256": "b6be5aabe53e90635beb77cd0e0ba7ae6a25c8cf903b15fcc342353e732e1512",
+  "original_license_paths": [
+    "package/License"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "f1016d3efabe721f426e3f5c18d06967620a8ed177f99413b0fc669ad6c1976c",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-combined-stream-1.0.8/01-License.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

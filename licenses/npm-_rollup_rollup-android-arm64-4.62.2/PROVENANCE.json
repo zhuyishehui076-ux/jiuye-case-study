@@ -1,0 +1,19 @@
+{
+  "name": "@rollup/rollup-android-arm64",
+  "version": "4.62.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rollup%2Frollup-android-arm64/4.62.2",
+  "artifact": "https://registry.npmjs.org/@rollup/rollup-android-arm64/-/rollup-android-arm64-4.62.2.tgz",
+  "sha256": "d397887e52084a7cedf650a2f3e2c6d97f258d0e2272f113b3606f8cae744454",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "28e0a8cfaa35581e60e75803a2f965adede6fd641ddb5e2ed5ba7b1d19aa0e9b",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rollup-4.62.2/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

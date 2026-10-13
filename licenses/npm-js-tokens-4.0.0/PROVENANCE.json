@@ -1,0 +1,21 @@
+{
+  "name": "js-tokens",
+  "version": "4.0.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/js-tokens/4.0.0",
+  "artifact": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz",
+  "sha256": "d884c7a2d8adb5568c1272d92b4f9c62707f4226cf9e7b22e7b957c7361e3c53",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "1ac8c68600567100b906c7239a43054d215a4ff536e2f0691a38231e19196015",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-js-tokens-4.0.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

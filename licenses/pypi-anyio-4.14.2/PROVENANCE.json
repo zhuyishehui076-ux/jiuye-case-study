@@ -1,0 +1,21 @@
+{
+  "name": "anyio",
+  "version": "4.14.2",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/anyio/4.14.2/json",
+  "artifact": "https://files.pythonhosted.org/packages/da/35/f2287558c17e29fafc8ef3daf819bb9834061cfa43bff8014f7df7f63bdc/anyio-4.14.2-py3-none-any.whl",
+  "sha256": "9f505dda5ac9f0c8309b5e8bd445a8c2bf7246f3ce950121e45ea15bc41d1494",
+  "original_license_paths": [
+    "anyio-4.14.2.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "db8486b090bcf9977cd53888ffcd558fdf646d47887f656ab2eeeb0e9bb4cd06",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-anyio-4.14.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@rollup/rollup-win32-arm64-msvc",
+  "version": "4.62.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rollup%2Frollup-win32-arm64-msvc/4.62.2",
+  "artifact": "https://registry.npmjs.org/@rollup/rollup-win32-arm64-msvc/-/rollup-win32-arm64-msvc-4.62.2.tgz",
+  "sha256": "e4d4484653132e5f08ea80c947302b8ea911d9c69d2ce5d4e49161fe984334b3",
+  "original_license_paths": [],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "NATIVE_PACKAGE_METADATA_WITH_SAME_VERSION_MAIN_LICENSE",
+  "registry_metadata_sha256": "3b0ce42414c5c8bf2aa4c603d97bdfcbd099cb20033fee8473aad13074594f64",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rollup-4.62.2/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

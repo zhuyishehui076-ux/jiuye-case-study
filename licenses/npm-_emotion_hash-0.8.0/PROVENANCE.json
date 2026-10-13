@@ -1,0 +1,21 @@
+{
+  "name": "@emotion/hash",
+  "version": "0.8.0",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40emotion%2Fhash/0.8.0",
+  "artifact": "https://registry.npmjs.org/@emotion/hash/-/hash-0.8.0.tgz",
+  "sha256": "7fbf83c41bbfe4cc9725b92881897d587d457e43acbdffab23a4ebf290a52535",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "2c929679dd8be09cd83243c4e2538a0f4af1cf7a73534ffecf1146f7a9883fc9",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_emotion_hash-0.8.0/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

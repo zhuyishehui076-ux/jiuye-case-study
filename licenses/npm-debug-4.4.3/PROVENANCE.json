@@ -1,0 +1,21 @@
+{
+  "name": "debug",
+  "version": "4.4.3",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/debug/4.4.3",
+  "artifact": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+  "sha256": "89c1ac9c946ee8905a875837114528e97eeae35e03be3190584b2216af43e4a7",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "9dcaa69f6946d12b9f94ad83766fd31029986c18ca9753a15ebdc49031d16dc4",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-debug-4.4.3/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

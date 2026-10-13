@@ -1,0 +1,21 @@
+{
+  "name": "annotated-doc",
+  "version": "0.0.4",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/annotated-doc/0.0.4/json",
+  "artifact": "https://files.pythonhosted.org/packages/1e/d3/26bf1008eb3d2daa8ef4cacc7f3bfdc11818d111f7e2d0201bc6e3b49d45/annotated_doc-0.0.4-py3-none-any.whl",
+  "sha256": "571ac1dc6991c450b25a9c2d84a3705e2ae7a53467b5d111c24fa8baabbed320",
+  "original_license_paths": [
+    "annotated_doc-0.0.4.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "81a5fb1d44ef28309c0799beaaeaa5ce07fa635b17ef569adcbfd46c4497928f",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/pypi-annotated-doc-0.0.4/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

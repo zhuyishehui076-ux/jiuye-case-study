@@ -1,0 +1,21 @@
+{
+  "name": "@remix-run/router",
+  "version": "1.23.4",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40remix-run%2Frouter/1.23.4",
+  "artifact": "https://registry.npmjs.org/@remix-run/router/-/router-1.23.4.tgz",
+  "sha256": "ae1833409d89597238c9fdbea03add5a419ff2aa9657e29265134231c1a00bc7",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "b8a33bfc450f0e5d556f7511de11e355311a841e40884673ccaf4eb9ea4a2b3c",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_remix-run_router-1.23.4/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "string-convert",
+  "version": "0.2.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/string-convert/0.2.1",
+  "artifact": "https://registry.npmjs.org/string-convert/-/string-convert-0.2.1.tgz",
+  "sha256": "064840f070d800de4c54be5b1bfc18fad80e2c3d5c1d88c8cae07bce4bd0d2e6",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "edcc14864d31fd938780f8d6d5926fd37404fdb6f7e97159c29a80d2d79995ce",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-string-convert-0.2.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

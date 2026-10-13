@@ -1,0 +1,21 @@
+{
+  "name": "es-object-atoms",
+  "version": "1.1.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/es-object-atoms/1.1.2",
+  "artifact": "https://registry.npmjs.org/es-object-atoms/-/es-object-atoms-1.1.2.tgz",
+  "sha256": "f295c5df6751c65b4b9492b03c88fab5e13419de28a51ecdf17e693b4a421af0",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "3e94ac65ae014bf519da2e4fa88644d7dd5ef843ba7e75a6c707d37ccac67a34",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-es-object-atoms-1.1.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

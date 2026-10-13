@@ -1,0 +1,51 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg15
+    environment:
+      POSTGRES_DB: ${CASE_DATABASE:?}
+      POSTGRES_USER: case_user
+      POSTGRES_PASSWORD: ${CASE_DB_PASSWORD:?}
+    volumes: [pgdata:/var/lib/postgresql/data]
+    networks: [case_internal]
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U case_user -d "$${POSTGRES_DB}"']
+      interval: 3s
+      timeout: 3s
+      retries: 30
+  test:
+    image: ${CASE_PROJECT:?}-backend-test:local
+    build:
+      context: ./backend
+      target: test
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      APP_PROFILE: demo
+      DEPLOYMENT_MODE: local
+      DATABASE_URL: ${DATABASE_URL:?}
+      JWT_SECRET: ${JWT_SECRET:?}
+      FIELD_ENCRYPTION_KEY: ${FIELD_ENCRYPTION_KEY:?}
+      INSTALLATION_ID: ${INSTALLATION_ID:?}
+      JIUYE_TEST_DATABASE: ${CASE_DATABASE:?}
+      JIUYE_TEST_DB_HOST: postgres
+      JIUYE_TEST_DB_PORT: '5432'
+      JIUYE_TEST_INSTALLATION_ID: ${INSTALLATION_ID:?}
+      ALLOWED_HOSTS: testserver,localhost,127.0.0.1
+      UPLOAD_DIR: /data/uploads
+      LLM_API_KEY: ''
+      LLM_BASE_URL: ''
+      LLM_MODEL: ''
+      LOCAL_LLM_MODE: gpu_realtime
+    volumes:
+      - uploads:/data/uploads
+      - type: bind
+        source: ${CASE_REPORTS:?}
+        target: /validation
+    networks: [case_internal]
+networks:
+  case_internal:
+    internal: true
+volumes:
+  pgdata: {}
+  uploads: {}

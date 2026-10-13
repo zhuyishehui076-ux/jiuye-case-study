@@ -1,0 +1,21 @@
+{
+  "name": "rc-menu",
+  "version": "9.16.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/rc-menu/9.16.1",
+  "artifact": "https://registry.npmjs.org/rc-menu/-/rc-menu-9.16.1.tgz",
+  "sha256": "53982f094fdfcc2c6ad236033773d3285522b9c4d1266170459f7b61623f6520",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "28150d25dfa0c5cd019713abacb789c31cbf3948e0bb61bf8bc02badb605df8b",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-rc-menu-9.16.1/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

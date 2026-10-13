@@ -1,0 +1,21 @@
+{
+  "name": "@rc-component/portal",
+  "version": "1.1.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40rc-component%2Fportal/1.1.2",
+  "artifact": "https://registry.npmjs.org/@rc-component/portal/-/portal-1.1.2.tgz",
+  "sha256": "78c7dafb9c4107b023ba6856a6ccb232ffc9db3183445d6f36b6cd69ed272c6d",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "57e3fda7c0d1cb3537ea15178ddea1c08738c32c44a36e704da552489d23833e",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_rc-component_portal-1.1.2/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

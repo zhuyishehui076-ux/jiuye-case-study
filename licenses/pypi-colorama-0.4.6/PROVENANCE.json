@@ -1,0 +1,21 @@
+{
+  "name": "colorama",
+  "version": "0.4.6",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/colorama/0.4.6/json",
+  "artifact": "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl",
+  "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+  "original_license_paths": [
+    "colorama-0.4.6.dist-info/licenses/LICENSE.txt"
+  ],
+  "package_redistributed": false,
+  "declared_license": "License :: OSI Approved :: BSD License",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "43fb351344384a44c2b7d7fff1c63496b89ac830aea714301525c1f3718addd1",
+  "publisher_declared_license": "",
+  "referenced_license_texts": [
+    "licenses/pypi-colorama-0.4.6/01-LICENSE.txt.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

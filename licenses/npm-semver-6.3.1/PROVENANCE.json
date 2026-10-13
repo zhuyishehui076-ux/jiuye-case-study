@@ -1,0 +1,21 @@
+{
+  "name": "semver",
+  "version": "6.3.1",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/semver/6.3.1",
+  "artifact": "https://registry.npmjs.org/semver/-/semver-6.3.1.tgz",
+  "sha256": "3c9b042a38e099cbd00a9bd792042aefb62a70b3f0f1ba1a3cbddf07e5eb1230",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "ISC",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "29cfb2b1a7faf5eddd3e447b3bb8195f01d2ee6d269a58ce27140238a4a743a1",
+  "publisher_declared_license": "ISC",
+  "referenced_license_texts": [
+    "licenses/npm-semver-6.3.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

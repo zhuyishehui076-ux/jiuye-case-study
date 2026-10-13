@@ -1,0 +1,21 @@
+{
+  "name": "picomatch",
+  "version": "4.0.7",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/picomatch/4.0.7",
+  "artifact": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz",
+  "sha256": "697b463be3cdbd9ffc8f4194fd5019a69ddf95875fb703d78b2b115cc9e740a8",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "f5b19326b62bc9009139f82d9b3400421edf9fc0ade0212d49d1bac349659d77",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-picomatch-4.0.7/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

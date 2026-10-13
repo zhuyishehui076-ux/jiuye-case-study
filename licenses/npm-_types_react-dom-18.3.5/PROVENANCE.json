@@ -1,0 +1,21 @@
+{
+  "name": "@types/react-dom",
+  "version": "18.3.5",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40types%2Freact-dom/18.3.5",
+  "artifact": "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.3.5.tgz",
+  "sha256": "d42bdc12a03fbc8bc7cb0ab21557f82a5f955e76e1db7c7a7d11084a1d626833",
+  "original_license_paths": [
+    "react-dom v18.3/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "3079fb59e2cc2afdda2d255ed5692474818632c1bfb1bc7218087d0f54d617c4",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_types_react-dom-18.3.5/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

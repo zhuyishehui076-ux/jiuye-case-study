@@ -1,0 +1,21 @@
+{
+  "name": "typescript",
+  "version": "5.7.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/typescript/5.7.2",
+  "artifact": "https://registry.npmjs.org/typescript/-/typescript-5.7.2.tgz",
+  "sha256": "6826f763112d55de0093fd94a4257cabadf1f40b387757e7c68485fc971e886b",
+  "original_license_paths": [
+    "package/LICENSE.txt"
+  ],
+  "package_redistributed": false,
+  "declared_license": "Apache-2.0",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "10672984fa0ecb6ec295eb00d4eeea931f6138b73d0f46941fed914fab13ec22",
+  "publisher_declared_license": "Apache-2.0",
+  "referenced_license_texts": [
+    "licenses/npm-typescript-5.7.2/01-LICENSE.txt.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

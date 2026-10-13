@@ -1,0 +1,21 @@
+{
+  "name": "throttle-debounce",
+  "version": "5.0.2",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/throttle-debounce/5.0.2",
+  "artifact": "https://registry.npmjs.org/throttle-debounce/-/throttle-debounce-5.0.2.tgz",
+  "sha256": "506021395e2d0f44e7c3c3e47226580dc2ca54b5837314c165e99b92cfe63a63",
+  "original_license_paths": [
+    "package/LICENSE.md"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "8408678756a6bed6d6f7a9b143c02af0b02da66b59a27541f744ef84fb3ee056",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-throttle-debounce-5.0.2/01-LICENSE.md.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

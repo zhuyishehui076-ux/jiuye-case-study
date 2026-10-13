@@ -1,0 +1,21 @@
+{
+  "name": "markupsafe",
+  "version": "3.0.3",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/markupsafe/3.0.3/json",
+  "artifact": "https://files.pythonhosted.org/packages/83/8a/4414c03d3f891739326e1783338e48fb49781cc915b2e0ee052aa490d586/markupsafe-3.0.3-cp311-cp311-win_amd64.whl",
+  "sha256": "de8a88e63464af587c950061a5e6a67d3632e36df62b986892331d4620a35c01",
+  "original_license_paths": [
+    "markupsafe-3.0.3.dist-info/licenses/LICENSE.txt"
+  ],
+  "package_redistributed": false,
+  "declared_license": "BSD-3-Clause",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "0de4f18187d0fc2318de8504c4178f2297bc7cfa7a55adfb6d013190aff8cff4",
+  "publisher_declared_license": "BSD-3-Clause",
+  "referenced_license_texts": [
+    "licenses/pypi-markupsafe-3.0.3/01-LICENSE.txt.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "websockets",
+  "version": "16.1",
+  "ecosystem": "pypi",
+  "metadata": "https://pypi.org/pypi/websockets/16.1/json",
+  "artifact": "https://files.pythonhosted.org/packages/81/06/85574d9458d3b913090087b817df0cc47b68e9a01dd0ab6ac04b77f49b0a/websockets-16.1-cp311-cp311-win_amd64.whl",
+  "sha256": "f9f4fb9ae8b802e55609685db98382d48fd3feb1397804e1e774968dea0f28c7",
+  "original_license_paths": [
+    "websockets-16.1.dist-info/licenses/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "BSD-3-Clause",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "5cf6ddf14cf893a732244111e4c0eaf240fc5928e65ce92aec10028ca99c1f76",
+  "publisher_declared_license": "BSD-3-Clause",
+  "referenced_license_texts": [
+    "licenses/pypi-websockets-16.1/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}

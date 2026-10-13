@@ -1,0 +1,21 @@
+{
+  "name": "@jridgewell/sourcemap-codec",
+  "version": "1.5.5",
+  "ecosystem": "npm",
+  "metadata": "https://registry.npmjs.org/%40jridgewell%2Fsourcemap-codec/1.5.5",
+  "artifact": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz",
+  "sha256": "47ad3b0d20a2e5e31ed65049829440fb1e3d4ac554d93f8040562c1821816585",
+  "original_license_paths": [
+    "package/LICENSE"
+  ],
+  "package_redistributed": false,
+  "declared_license": "MIT",
+  "evidence_state": "ARTIFACT_HASH_AND_LICENSE_TEXT_CAPTURED",
+  "registry_metadata_sha256": "8231d120cdb9c73102d89504204442379fb21ea38b697becddb66ff0d1422a9a",
+  "publisher_declared_license": "MIT",
+  "referenced_license_texts": [
+    "licenses/npm-_jridgewell_sourcemap-codec-1.5.5/01-LICENSE.txt"
+  ],
+  "license_text_gap": "",
+  "note": "Public official package metadata and artifact hash evidence; package binary/archive is not redistributed."
+}
