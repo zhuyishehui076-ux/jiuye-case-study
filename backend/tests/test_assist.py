@@ -13,10 +13,10 @@ from tests.conftest import login
 def test_red_students_auto_create_assist_cases(pg_engine):
     from app.db.session import SessionLocal
     from app.models import AssistCase, Student
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
 
     with SessionLocal() as s:
-        counts = run_demo_seed(s, reset=True)
+        counts = reset_case_demo_seed(s)
         risk_red = s.execute(
             select(func.count()).select_from(Student).where(Student.risk_level == "red")
         ).scalar_one()
@@ -33,10 +33,10 @@ def test_red_students_auto_create_assist_cases(pg_engine):
 def test_assist_record_append_only_and_no_delete_route(client, pg_engine, demo_passwords):
     from app.db.session import SessionLocal
     from app.models import AssistCase, AssistRecord
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
 
     with SessionLocal() as s:
-        run_demo_seed(s, reset=True)
+        reset_case_demo_seed(s)
         case_id = s.execute(select(AssistCase.id).order_by(AssistCase.id).limit(1)).scalar_one()
 
     token = login(client, "office", demo_passwords['office'])
@@ -78,10 +78,10 @@ def test_assist_exports_are_readable(client, pg_engine, demo_passwords):
 
     from app.db.session import SessionLocal
     from app.models import AssistCase
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
 
     with SessionLocal() as s:
-        run_demo_seed(s, reset=True)
+        reset_case_demo_seed(s)
         case_id = s.execute(select(AssistCase.id).order_by(AssistCase.id).limit(1)).scalar_one()
 
     token = login(client, "office", demo_passwords['office'])
@@ -111,10 +111,10 @@ def test_assist_exports_are_readable(client, pg_engine, demo_passwords):
 
 def test_counselor_assist_cases_limited_to_own_college(client, pg_engine, demo_passwords):
     from app.db.session import SessionLocal
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
 
     with SessionLocal() as s:
-        run_demo_seed(s, reset=True)
+        reset_case_demo_seed(s)
 
     counselor_token = login(client, "counselor", demo_passwords['counselor'])
     office_token = login(client, "office", demo_passwords['office'])

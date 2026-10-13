@@ -15,11 +15,15 @@
 | 后端纯单元 | Python 3.11.9、FastAPI 0.136.3、PyJWT 2.14.0、cryptography 48.0.1、pytest 8.3.4 | 41 项通过，0 失败/错误/跳过；含合法 HS256、畸形 JSON header 与深嵌套 header 的真实解码回归 |
 | required-PG 负向检查 | 17 个独立 pytest 进程 | 16 种错误配置在收集前拒绝；合法配置但纯测试选集在收集后拒绝；均为预期 exit 4，未连接数据库 |
 | 部署入口边界 | `python deploy/test_case.py` | 9 项通过：配置注入、目标覆盖、秘密复用、远程 context、已有资源等拒绝路径；不是 Docker 运行测试 |
-| PostgreSQL、容器构建、完整业务测试 | 本机 Docker Desktop Linux engine | 未执行成功：引擎启动失败，缺少可用 API；未改用 SQLite 计作通过 |
+| GitHub 前端构建 | Ubuntu / Node 22；`npm ci --ignore-scripts` + `npm run build` | 首轮 CI 通过 |
+| GitHub 源码检查 | 秘密扫描及自测、部署边界、无 CDN、无视觉依赖检查 | 首轮 CI 通过 |
+| Linux 后端测试镜像 | GitHub Ubuntu / Docker；`init test`、`check test`、`build test` | 首轮 CI 通过 |
+| 首轮真实 PostgreSQL 测试 | GitHub Docker / pgvector:pg15；114 项，JUnit 记录 | 80 通过、5 失败、29 错误、0 跳过；上传卷身份未初始化、测试种子互相污染和重复插入解析记录，正在修复测试准备 |
+| 本机 Docker Desktop | Linux engine 启动 | 失败：缺少可用 API；云端测试与本机状态分开记录 |
 | 演示 seed、四角色 HTTP、四页面浏览器 | 需要独立可运行容器与数据库 | 未执行 |
 | 真实模型推理与评估 | 未安装模型 | 未执行 |
 
-CI 的目标 Node 版本为 22。上表前端本机通过使用 Node 26，不能直接当成 Node 22 运行证据。Docker 基础镜像尚未完成本次拉取与摘要冻结。
+首轮云端结果对应提交 `ecfbb723927d4e1605cbd31fd1649b637ca9d94a`，见 [Actions 原始记录](https://github.com/zhuyishehui076-ux/jiuye-case-study/actions/runs/38416679440)。本机 Node 26 与云端 Node 22 分别实际执行。Docker 基础镜像使用标签，尚未冻结摘要；再次构建可能拉取不同镜像字节。
 
 ## 结果解释
 

@@ -200,7 +200,7 @@ def _upsert_profile_weights(db, value: dict) -> None:
 def test_profile_score_uses_configured_weights_and_evidence(pg_engine):
     from app.db.session import SessionLocal
     from app.models import Student
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
     from app.services.profiles import (
         DEFAULT_PROFILE_SCORE_WEIGHTS,
         PROFILE_DIMENSIONS,
@@ -209,7 +209,7 @@ def test_profile_score_uses_configured_weights_and_evidence(pg_engine):
     )
 
     with SessionLocal() as s:
-        run_demo_seed(s, reset=True)
+        reset_case_demo_seed(s)
         custom = dict(DEFAULT_PROFILE_SCORE_WEIGHTS)
         custom["专业成绩"] = {
             "self_report": 0.75,
@@ -242,11 +242,11 @@ def test_profile_score_uses_configured_weights_and_evidence(pg_engine):
 def test_rebuild_profile_is_idempotent_and_keeps_term_versions(pg_engine):
     from app.db.session import SessionLocal
     from app.models import Profile, Student
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
     from app.services.profiles import rebuild_profile_for_student
 
     with SessionLocal() as s:
-        run_demo_seed(s, reset=True)
+        reset_case_demo_seed(s)
         student_id = s.execute(select(Student.id).order_by(Student.id).limit(1)).scalar_one()
         first = rebuild_profile_for_student(
             s,
@@ -300,12 +300,12 @@ def test_rebuild_profile_is_idempotent_and_keeps_term_versions(pg_engine):
 def test_profile_narrative_v2_prompt_injects_concrete_facts(pg_engine):
     from app.db.session import SessionLocal
     from app.models import Student
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
     from app.services.profiles import rebuild_profile_for_student
 
     probe = NarrativeV2PromptProbe()
     with SessionLocal() as s:
-        run_demo_seed(s, reset=True)
+        reset_case_demo_seed(s)
         student_id = s.execute(select(Student.id).order_by(Student.id).limit(1)).scalar_one()
         profile = rebuild_profile_for_student(
             s,
@@ -326,11 +326,11 @@ def test_profile_narrative_v2_prompt_injects_concrete_facts(pg_engine):
 def test_profile_narrative_v2_requeues_thin_output(pg_engine):
     from app.db.session import SessionLocal
     from app.models import Student
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
     from app.services.profiles import rebuild_profile_for_student
 
     with SessionLocal() as s:
-        run_demo_seed(s, reset=True)
+        reset_case_demo_seed(s)
         student_id = s.execute(select(Student.id).order_by(Student.id).limit(1)).scalar_one()
         profile = rebuild_profile_for_student(
             s,
@@ -350,11 +350,11 @@ def test_profile_narrative_v2_requeues_thin_output(pg_engine):
 def test_profile_narrative_v2_requeues_mismatched_evidence_refs(pg_engine):
     from app.db.session import SessionLocal
     from app.models import Student
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
     from app.services.profiles import rebuild_profile_for_student
 
     with SessionLocal() as s:
-        run_demo_seed(s, reset=True)
+        reset_case_demo_seed(s)
         student_id = s.execute(select(Student.id).order_by(Student.id).limit(1)).scalar_one()
         profile = rebuild_profile_for_student(
             s,
@@ -374,12 +374,12 @@ def test_profile_narrative_v2_requeues_mismatched_evidence_refs(pg_engine):
 def test_profile_narrative_v2_random_20_refs_exist_and_match_types(pg_engine):
     from app.db.session import SessionLocal
     from app.models import Student
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
     from app.services.profiles import rebuild_profile_for_student
 
     checked: list[dict] = []
     with SessionLocal() as s:
-        run_demo_seed(s, reset=True)
+        reset_case_demo_seed(s)
         all_student_ids = s.execute(select(Student.id).order_by(Student.id)).scalars().all()
         sample_ids = random.Random(20260708).sample(all_student_ids, 20)
         for student_id in sample_ids:
@@ -413,11 +413,11 @@ def test_profile_narrative_v2_random_20_refs_exist_and_match_types(pg_engine):
 def test_profile_rebuild_endpoint_and_counselor_scope(client, pg_engine, demo_passwords):
     from app.db.session import SessionLocal
     from app.models import Profile
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
     from app.seed.users import seed_demo_users
 
     with SessionLocal() as s:
-        run_demo_seed(s, reset=True)
+        reset_case_demo_seed(s)
         seed_demo_users(s)
 
     office_token = login(client, "office", demo_passwords['office'])

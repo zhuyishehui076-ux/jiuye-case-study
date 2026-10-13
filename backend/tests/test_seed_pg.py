@@ -5,6 +5,8 @@
 
 from __future__ import annotations
 
+from tests.conftest import reset_case_demo_seed
+
 import pytest
 from sqlalchemy import func, select
 
@@ -19,7 +21,7 @@ def seeded(pg_engine):
     from app.db.session import SessionLocal
 
     with SessionLocal() as s:
-        counts = run_demo_seed(s, reset=True)
+        counts = reset_case_demo_seed(s)
     return counts
 
 

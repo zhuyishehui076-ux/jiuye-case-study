@@ -232,6 +232,75 @@ def db(pg_engine):
         conn.close()
 
 
+def _validate_case_pg_session(db) -> None:
+    """Authorize test-only writes using URL, actual DB and immutable identity."""
+    from sqlalchemy import text
+    from sqlalchemy.engine import make_url
+
+    from app.core.config import settings
+    from app.services.installation import verify_installation_profile
+
+    _validate_pg_test_target(
+        database_url=settings.database_url,
+        installation_id=settings.installation_id,
+        profile=settings.profile.value,
+        deployment_mode=settings.deployment.value,
+    )
+    _validate_pg_test_secrets(
+        database_url=settings.database_url,
+        jwt_secret=settings.jwt_secret,
+        field_encryption_key=settings.field_encryption_key,
+    )
+    bind = db.get_bind()
+    engine = getattr(bind, "engine", bind)
+    if bind.dialect.name != "postgresql" or engine.url != make_url(settings.database_url):
+        raise ValueError("The fixture session is bound to an unexpected database target")
+    if db.scalar(text("SELECT current_database()")) != os.environ["JIUYE_TEST_DATABASE"]:
+        raise ValueError("The fixture is connected to an unexpected database identity")
+    verify_installation_profile(
+        db,
+        expected_profile=settings.profile,
+        expected_installation_id=settings.installation_id,
+    )
+
+
+def reset_case_demo_seed(db):
+    """Clear synthetic test state only after independent target/identity checks."""
+    from app.seed.demo import run_demo_seed
+
+    _validate_case_pg_session(db)
+    # The existing explicit test-only reset contract preserves product defaults.
+    return run_demo_seed(db, reset=True, enforce_source_guard=False)
+
+
+@pytest.fixture(scope="session")
+def uploads_namespace(pg_engine):
+    """Claim only the isolated case test container's dedicated uploads volume."""
+    from app.core.config import settings
+    from app.db.session import SessionLocal
+    from app.services.storage_namespace import (
+        ensure_storage_namespace,
+        preflight_storage_namespace,
+    )
+
+    if os.name != "posix" or settings.upload_dir != "/data/uploads":
+        pytest.fail("PG client tests require the dedicated container uploads mount", pytrace=False)
+    with SessionLocal() as db:
+        _validate_case_pg_session(db)
+    preflight_storage_namespace(
+        settings.upload_dir,
+        kind="uploads",
+        expected_profile=settings.profile,
+        expected_installation_id=settings.installation_id,
+    )
+    return ensure_storage_namespace(
+        settings.upload_dir,
+        kind="uploads",
+        expected_profile=settings.profile,
+        expected_installation_id=settings.installation_id,
+    )
+
+
 class _GeneratedPassword(str):
     """Preserve str behavior while redacting pytest argument representations."""
 
@@ -247,7 +316,7 @@ def demo_passwords():
 
 
 @pytest.fixture(scope="session")
-def client(pg_engine, demo_passwords):
+def client(pg_engine, uploads_namespace, demo_passwords):
     from fastapi.testclient import TestClient
 
     from app.db.session import SessionLocal

@@ -12,11 +12,11 @@ from tests.conftest import login
 def dashboard_ready(pg_engine):
     """种子 + 刷新物化视图（写触发路径）。"""
     from app.db.session import SessionLocal
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
     from app.services.dashboard import refresh_dashboard_views
 
     with SessionLocal() as s:
-        run_demo_seed(s, reset=True)
+        reset_case_demo_seed(s)
         refresh_dashboard_views(s)
     return True
 

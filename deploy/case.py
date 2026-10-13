@@ -73,10 +73,23 @@ def invoke(args: list[str], config: dict[str, str], *, check: bool = True, input
     result = subprocess.run(args, cwd=plain(ROOT), env=env, text=True,
                             encoding="utf-8", errors="replace", capture_output=True, input=input_text)
     if check and result.returncode:
-        output = result.stdout + result.stderr
-        for name in ("DATABASE_URL", "CASE_DB_PASSWORD", "JWT_SECRET", "FIELD_ENCRYPTION_KEY"):
-            output = output.replace(config.get(name, "\0"), "[REDACTED]")
-        print(output[-12000:], file=sys.stderr)
+        # Keep pytest's stdout summary even when Docker progress fills stderr.
+        for label, stream, limit in (
+            ("command stdout", result.stdout, 16000),
+            ("command stderr", result.stderr, 4000),
+        ):
+            output = stream
+            for name in ("DATABASE_URL", "CASE_DB_PASSWORD", "JWT_SECRET", "FIELD_ENCRYPTION_KEY"):
+                value = config.get(name, "")
+                if value:
+                    output = output.replace(value, "[REDACTED]")
+            output = re.sub(
+                r"eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+",
+                "[REDACTED_JWT]",
+                output,
+            )
+            if output:
+                print(f"[{label}]\n{output[-limit:]}", file=sys.stderr)
         raise RuntimeError(f"command exit {result.returncode}; no automatic retry")
     return result
 

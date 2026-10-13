@@ -15,11 +15,11 @@ from tests.conftest import login
 @pytest.fixture(scope="module")
 def t4_ready(pg_engine):
     from app.db.session import SessionLocal
-    from app.seed.demo import run_demo_seed
+    from tests.conftest import reset_case_demo_seed
     from app.seed.users import seed_demo_users
 
     with SessionLocal() as s:
-        run_demo_seed(s, reset=True)
+        reset_case_demo_seed(s)
         seed_demo_users(s)
     return True
 
@@ -84,7 +84,17 @@ def test_review_flow_updates_parse_and_writes_audit_log(t4_ready):
     from app.services.jobs import review_job_parse
 
     with SessionLocal() as s:
-        job = s.execute(select(Job).order_by(Job.id)).scalars().first()
+        template = s.execute(select(Job).order_by(Job.id)).scalars().first()
+        job = Job(
+            company="Synthetic Review Company",
+            title="Synthetic Review Position",
+            raw_text="Synthetic review regression; no real employer data.",
+            source=template.source,
+            received_at=template.received_at,
+            created_by="test",
+        )
+        s.add(job)
+        s.flush()
         parse = JobParse(
             job_id=job.id,
             degree_req=None,
