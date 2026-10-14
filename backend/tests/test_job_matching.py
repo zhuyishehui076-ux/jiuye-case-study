@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from io import BytesIO
 from types import SimpleNamespace
+from uuid import uuid4
 
 import pytest
 from openpyxl import Workbook
@@ -61,6 +62,7 @@ def test_match_weights_are_loaded_from_app_settings(t4_ready):
         row = s.execute(
             select(AppSetting).where(AppSetting.key == "job_match_weights")
         ).scalar_one_or_none()
+        previous_value = dict(row.value) if row is not None else None
         if row is None:
             row = AppSetting(
                 key="job_match_weights",
@@ -70,18 +72,24 @@ def test_match_weights_are_loaded_from_app_settings(t4_ready):
             )
             s.add(row)
         row.value = {"major": 1.0, "direction": 0.0, "hard": 0.0}
-        s.commit()
+        # 只在此事务内验证覆盖值；关闭会话时回滚，避免污染后续推送用例。
+        s.flush()
         weights = load_match_weights(s)
 
     assert weights.major == 1.0
     assert weights.direction == 0.0
     assert weights.hard == 0.0
+    with SessionLocal() as s:
+        persisted_value = s.scalar(
+            select(AppSetting.value).where(AppSetting.key == "job_match_weights")
+        )
+    assert persisted_value == previous_value
 
 
 def test_review_flow_updates_parse_and_writes_audit_log(t4_ready):
     from app.db.session import SessionLocal
     from app.models import AuditLog, Job, JobParse
-    from app.services.jobs import review_job_parse
+    from app.services.jobs import JobParseReviewConflictError, review_job_parse
 
     with SessionLocal() as s:
         template = s.execute(select(Job).order_by(Job.id)).scalars().first()
@@ -109,11 +117,13 @@ def test_review_flow_updates_parse_and_writes_audit_log(t4_ready):
         )
         s.add(parse)
         s.commit()
+        expected_revision = parse.review_revision
 
         updated = review_job_parse(
             s,
             parse.id,
             actor="office",
+            expected_revision=expected_revision,
             updates={
                 "degree_req": "本科",
                 "major_codes": ["080901"],
@@ -129,6 +139,18 @@ def test_review_flow_updates_parse_and_writes_audit_log(t4_ready):
                 AuditLog.object_id == str(parse.id),
             ).order_by(AuditLog.id.desc())
         ).scalars().first()
+        assert updated.review_revision == expected_revision + 1
+        assert audit.change_summary["before"]["review_revision"] == expected_revision
+        assert audit.change_summary["after"]["review_revision"] == expected_revision + 1
+        with pytest.raises(JobParseReviewConflictError):
+            review_job_parse(
+                s,
+                parse.id,
+                actor="office",
+                expected_revision=expected_revision,
+                updates={"major_codes": []},
+            )
+        assert updated.major_codes == ["080901"]
 
     assert updated.needs_review is False
     assert updated.major_codes == ["080901"]
@@ -252,14 +274,14 @@ def test_job_entry_endpoints_cover_paste_xlsx_and_email_stub(client, t4_ready, d
 
     pasted = client.post(
         "/api/v1/jobs/paste",
-        headers=office_headers,
+        headers={**office_headers, "Idempotency-Key": str(uuid4())},
         json={
             "company": "测试企业",
             "title": "算法工程师",
             "raw_text": "本科，计算机相关专业，北京，负责人工智能算法开发。",
         },
     )
-    assert pasted.status_code == 200
+    assert pasted.status_code == 200, pasted.text
     assert pasted.json()["source"] == "表单"
 
     wb = Workbook()
@@ -271,7 +293,7 @@ def test_job_entry_endpoints_cover_paste_xlsx_and_email_stub(client, t4_ready, d
     wb.save(buf)
     imported = client.post(
         "/api/v1/jobs/import-xlsx",
-        headers=office_headers,
+        headers={**office_headers, "Idempotency-Key": str(uuid4())},
         files={
             "file": (
                 "jobs.xlsx",
@@ -280,10 +302,12 @@ def test_job_entry_endpoints_cover_paste_xlsx_and_email_stub(client, t4_ready, d
             )
         },
     )
-    assert imported.status_code == 200
+    assert imported.status_code == 200, imported.text
     assert len(imported.json()) == 2
     assert client.post("/api/v1/jobs/email-pull", headers=office_headers).status_code == 501
-    assert client.post("/api/v1/jobs/paste", headers=leader_headers, json={
+    assert client.post("/api/v1/jobs/paste", headers={
+        **leader_headers, "Idempotency-Key": str(uuid4()),
+    }, json={
         "company": "只读企业",
         "title": "只读岗位",
         "raw_text": "leader_readonly 不应可写",
@@ -292,18 +316,20 @@ def test_job_entry_endpoints_cover_paste_xlsx_and_email_stub(client, t4_ready, d
 
 def test_push_confirm_and_export_match_list(client, t4_ready, demo_passwords):
     from app.db.session import SessionLocal
-    from app.models import Job, JobParse
+    from app.models import AuditLog, Job, JobParse, Major, Match
     from app.services.jobs import calculate_matches_for_job
 
     with SessionLocal() as s:
         job = s.execute(
             select(Job).where(~Job.parse.has()).order_by(Job.id)
         ).scalars().first()
+        major_codes = list(s.scalars(select(Major.code).order_by(Major.id)))
+        assert major_codes
         s.add(
             JobParse(
                 job_id=job.id,
                 degree_req=None,
-                major_codes=[],
+                major_codes=major_codes,
                 direction_keywords=[],
                 location=None,
                 parse_confidence=0.9,
@@ -314,14 +340,28 @@ def test_push_confirm_and_export_match_list(client, t4_ready, demo_passwords):
         )
         s.commit()
         job_id = job.id
-        calculate_matches_for_job(s, job_id, actor="office", limit=10)
+        matches = calculate_matches_for_job(s, job_id, actor="office", limit=10)
+        assert len(matches) == 10
+        assert all(float(row.score) > 0 and row.pushed_at is None for row in matches)
         s.commit()
 
     office_token = login(client, "office", demo_passwords['office'])
     headers = {"Authorization": f"Bearer {office_token}"}
     pushed = client.post(f"/api/v1/jobs/{job_id}/push", headers=headers)
-    assert pushed.status_code == 200
+    assert pushed.status_code == 200, pushed.text
     assert pushed.json()["pushed"] == 10
+    replayed = client.post(f"/api/v1/jobs/{job_id}/push", headers=headers)
+    assert replayed.status_code == 200, replayed.text
+    assert replayed.json()["pushed"] == 0
+    assert replayed.json()["already_pushed"] == 10
+    with SessionLocal() as s:
+        rows = list(s.scalars(select(Match).where(Match.job_id == job_id)))
+        push_audits = list(s.scalars(select(AuditLog).where(
+            AuditLog.action == "job_match.push", AuditLog.object_id == str(job_id),
+        )))
+    assert len(rows) == 10
+    assert all(row.pushed_at is not None for row in rows)
+    assert len(push_audits) == 1
 
     exported = client.get(f"/api/v1/jobs/{job_id}/export", headers=headers)
     assert exported.status_code == 200
@@ -329,3 +369,35 @@ def test_push_confirm_and_export_match_list(client, t4_ready, demo_passwords):
     body = exported.text
     assert "student_no,student_name,college_id,major_id,score,reason_text" in body
     assert "专业代码" in body
+
+
+def test_major_only_weights_with_no_major_hit_block_push(t4_ready, db):
+    """复现旧推送夹具的零分条件；变更仅在可回滚的 PG 测试事务内。"""
+    from app.models import AuditLog, Job, JobParse
+    from app.models.setting import AppSetting
+    from app.services.jobs import (
+        MatchNotEligibleError,
+        calculate_matches_for_job,
+        confirm_push_matches,
+    )
+
+    weights = db.scalar(select(AppSetting).where(AppSetting.key == "job_match_weights"))
+    weights.value = {"major": 1.0, "direction": 0.0, "hard": 0.0}
+    job = db.scalars(select(Job).where(~Job.parse.has()).order_by(Job.id)).first()
+    db.add(JobParse(
+        job_id=job.id,
+        major_codes=[],
+        direction_keywords=[],
+        needs_review=False,
+        created_by="test",
+    ))
+    db.flush()
+    matches = calculate_matches_for_job(db, job.id, actor="office", limit=10)
+    assert len(matches) == 10
+    assert all(float(row.score) == 0 for row in matches)
+    with pytest.raises(MatchNotEligibleError, match="匹配度为 0"):
+        confirm_push_matches(db, job.id, actor="office")
+    assert all(row.pushed_at is None for row in matches)
+    assert not list(db.scalars(select(AuditLog).where(
+        AuditLog.action == "job_match.push", AuditLog.object_id == str(job.id),
+    )))
