@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from io import BytesIO
+from uuid import uuid4
 
 from openpyxl import load_workbook
 from sqlalchemy import func, select
@@ -32,24 +33,51 @@ def test_red_students_auto_create_assist_cases(pg_engine):
 
 def test_assist_record_append_only_and_no_delete_route(client, pg_engine, demo_passwords):
     from app.db.session import SessionLocal
-    from app.models import AssistCase, AssistRecord
+    from app.models import AssistCase, AssistRecord, AuditLog
     from tests.conftest import reset_case_demo_seed
 
     with SessionLocal() as s:
         reset_case_demo_seed(s)
-        case_id = s.execute(select(AssistCase.id).order_by(AssistCase.id).limit(1)).scalar_one()
+        # 使用尚无记录的模拟档案，避免把故事种子的既有记录计入两次追加。
+        case_id = s.execute(
+            select(AssistCase.id)
+            .where(~select(AssistRecord.id).where(AssistRecord.case_id == AssistCase.id).exists())
+            .order_by(AssistCase.id)
+            .limit(1)
+        ).scalar_one()
 
     token = login(client, "office", demo_passwords['office'])
     headers = {"Authorization": f"Bearer {token}"}
-    first = client.post(
+    missing_key = client.post(
         f"/api/v1/assist/cases/{case_id}/records",
         headers=headers,
+        json={"action_type": "约谈", "note": "缺少幂等键应被拒绝"},
+    )
+    assert missing_key.status_code == 422, missing_key.text
+    first_headers = {**headers, "Idempotency-Key": str(uuid4())}
+    first = client.post(
+        f"/api/v1/assist/cases/{case_id}/records",
+        headers=first_headers,
         json={"action_type": "约谈", "note": "<p>首次约谈，确认求职目标。</p>"},
     )
     assert first.status_code == 200, first.text
+    replayed = client.post(
+        f"/api/v1/assist/cases/{case_id}/records",
+        headers=first_headers,
+        json={"action_type": "约谈", "note": "<p>首次约谈，确认求职目标。</p>"},
+    )
+    assert replayed.status_code == 200, replayed.text
+    assert replayed.json()["id"] == first.json()["id"]
+    assert replayed.json()["replayed"] is True
+    conflict = client.post(
+        f"/api/v1/assist/cases/{case_id}/records",
+        headers=first_headers,
+        json={"action_type": "其他", "note": "同一幂等键不能改写记录"},
+    )
+    assert conflict.status_code == 409, conflict.text
     correction = client.post(
         f"/api/v1/assist/cases/{case_id}/records",
-        headers=headers,
+        headers={**headers, "Idempotency-Key": str(uuid4())},
         json={"action_type": "其他", "note": "<p>更正：目标企业补充为本地软件企业。</p>"},
     )
     assert correction.status_code == 200, correction.text
@@ -58,8 +86,15 @@ def test_assist_record_append_only_and_no_delete_route(client, pg_engine, demo_p
         rows = s.execute(
             select(AssistRecord).where(AssistRecord.case_id == case_id).order_by(AssistRecord.id)
         ).scalars().all()
+        audit_count = s.scalar(
+            select(func.count()).select_from(AuditLog).where(
+                AuditLog.action == "assist_record.append",
+                AuditLog.object_id.in_([str(row.id) for row in rows]),
+            )
+        )
 
     assert len(rows) == 2
+    assert audit_count == 2
     assert rows[0].note == "<p>首次约谈，确认求职目标。</p>"
     assert rows[1].note.startswith("<p>更正")
     from app.main import app
@@ -86,11 +121,12 @@ def test_assist_exports_are_readable(client, pg_engine, demo_passwords):
 
     token = login(client, "office", demo_passwords['office'])
     headers = {"Authorization": f"Bearer {token}"}
-    client.post(
+    appended = client.post(
         f"/api/v1/assist/cases/{case_id}/records",
-        headers=headers,
+        headers={**headers, "Idempotency-Key": str(uuid4())},
         json={"action_type": "培训", "note": "参加简历训练营"},
     )
+    assert appended.status_code == 200, appended.text
 
     xlsx = client.get("/api/v1/assist/export.xlsx", headers=headers)
     assert xlsx.status_code == 200, xlsx.text
@@ -135,7 +171,10 @@ def test_counselor_assist_cases_limited_to_own_college(client, pg_engine, demo_p
     outside = next(row for row in office_rows if row["college_id"] != 1)
     denied = client.post(
         f"/api/v1/assist/cases/{outside['id']}/records",
-        headers={"Authorization": f"Bearer {counselor_token}"},
+        headers={
+            "Authorization": f"Bearer {counselor_token}",
+            "Idempotency-Key": str(uuid4()),
+        },
         json={"action_type": "约谈", "note": "越权写入应被拒绝"},
     )
     assert denied.status_code == 403

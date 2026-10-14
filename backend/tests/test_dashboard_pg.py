@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from uuid import uuid4
+
 import pytest
 from sqlalchemy import text
 
@@ -169,28 +171,121 @@ def test_refresh_reflects_writes(dashboard_ready):
         refresh_dashboard_views(s)
 
 
-# ---------------- 端点 + RBAC（leader_readonly 可见，无写入口） ----------------
+# ---------------- 已确认的读取矩阵 + 就业办专用目标修改 ----------------
 
 
-def test_all_roles_read_dashboard(client, dashboard_ready, demo_passwords):
-    for user in ('admin', 'leader'):
-        tok = login(client, user, demo_passwords[user])
-        h = {"Authorization": f"Bearer {tok}"}
-        for path in ["/api/v1/dashboard/summary", "/api/v1/dashboard/colleges",
-                     "/api/v1/dashboard/trend", "/api/v1/dashboard/alerts"]:
-            r = client.get(path, headers=h)
-            assert r.status_code == 200, f"{user} {path} {r.status_code} {r.text}"
+@pytest.mark.parametrize(
+    "user,allowed",
+    [
+        ("admin", {"summary", "target"}),
+        ("office", {"summary", "colleges", "trend", "alerts", "target", "colleges/1/oversight"}),
+        ("counselor", {"alerts", "my-college-summary", "target"}),
+        ("leader", {"summary", "colleges", "trend", "target", "colleges/1/oversight"}),
+    ],
+)
+def test_dashboard_read_role_matrix(client, dashboard_ready, demo_passwords, user, allowed):
+    tok = login(client, user, demo_passwords[user])
+    h = {"Authorization": f"Bearer {tok}"}
+    for endpoint in (
+        "summary", "colleges", "trend", "alerts", "my-college-summary", "target",
+        "colleges/1/oversight",
+    ):
+        r = client.get(f"/api/v1/dashboard/{endpoint}", headers=h)
+        expected = 200 if endpoint in allowed else 403
+        assert r.status_code == expected, f"{user} {endpoint} {r.status_code} {r.text}"
+        if user == "counselor" and endpoint == "alerts":
+            assert r.json()
+            assert all(row["college_id"] == 1 for row in r.json())
+        if user == "counselor" and endpoint == "my-college-summary":
+            assert r.json()["college_id"] == 1
 
 
-def test_dashboard_has_no_write_routes(client):
-    # leader_readonly 无任何写入口：/dashboard 下不存在非 GET 路由
+def test_dashboard_exposes_only_the_confirmed_target_write(client):
     from app.main import app
 
-    for route in app.routes:
-        path = getattr(route, "path", "")
-        methods = getattr(route, "methods", set()) or set()
-        if "/dashboard" in path:
-            assert methods <= {"GET", "HEAD"}, f"{path} 暴露了写方法 {methods}"
+    writes = {
+        (path, method)
+        for path, operations in app.openapi()["paths"].items()
+        if path.startswith("/api/v1/dashboard/")
+        for method in operations
+        if method in {"post", "put", "patch", "delete"}
+    }
+    assert writes == {("/api/v1/dashboard/target", "put")}
+
+
+def test_target_write_keeps_role_revision_idempotency_and_audit_guards(
+    client, dashboard_ready, demo_passwords, db, monkeypatch,
+):
+    from sqlalchemy import func, select
+
+    from app.db.session import get_db
+    from app.main import app
+    from app.models import AuditLog
+    from app.models.setting import EMPLOYMENT_TARGET_KEY
+
+    # 仅把真实PG会话接入可回滚事务；认证、角色和写入守卫仍执行原实现。
+    def transaction_db():
+        yield db
+
+    monkeypatch.setitem(app.dependency_overrides, get_db, transaction_db)
+    office = login(client, "office", demo_passwords["office"])
+    auth = {"Authorization": f"Bearer {office}"}
+    before = client.get("/api/v1/dashboard/target", headers=auth)
+    assert before.status_code == 200, before.text
+    audit_query = select(func.count()).select_from(AuditLog).where(
+        AuditLog.action == "dashboard.target.update",
+        AuditLog.object_id == EMPLOYMENT_TARGET_KEY,
+    )
+    audit_before = db.scalar(audit_query)
+    payload = {
+        "target_rate": 72.0,
+        "note": "Synthetic CI target adjustment",
+        "expected_revision": before.json()["revision"],
+    }
+    for user in ("admin", "counselor", "leader"):
+        token = login(client, user, demo_passwords[user])
+        denied = client.put("/api/v1/dashboard/target", json=payload, headers={
+            "Authorization": f"Bearer {token}", "Idempotency-Key": str(uuid4()),
+        })
+        assert denied.status_code == 403, denied.text
+        receipt_denied = client.get(
+            f"/api/v1/dashboard/target-operations/{uuid4()}",
+            headers={"Authorization": f"Bearer {token}"},
+        )
+        assert receipt_denied.status_code == 403, receipt_denied.text
+
+    assert client.put("/api/v1/dashboard/target", headers=auth, json=payload).status_code == 422
+    assert client.put("/api/v1/dashboard/target", headers={
+        **auth, "Idempotency-Key": "invalid-key",
+    }, json=payload).status_code == 422
+    assert client.put("/api/v1/dashboard/target", headers={
+        **auth, "Idempotency-Key": str(uuid4()),
+    }, json={"target_rate": 72.0, "note": payload["note"]}).status_code == 422
+
+    key = str(uuid4())
+    headers = {**auth, "Idempotency-Key": key}
+    updated = client.put("/api/v1/dashboard/target", headers=headers, json=payload)
+    assert updated.status_code == 200, updated.text
+    assert updated.json()["revision"] == payload["expected_revision"] + 1
+    assert updated.json()["target_rate"] == 72.0
+    replay = client.put("/api/v1/dashboard/target", headers=headers, json=payload)
+    assert replay.status_code == 200, replay.text
+    assert replay.json() == updated.json()
+    receipt = client.get(f"/api/v1/dashboard/target-operations/{key}", headers=auth)
+    assert receipt.status_code == 200, receipt.text
+    assert receipt.json() == updated.json()
+    conflict = client.put(
+        "/api/v1/dashboard/target", headers=headers, json={**payload, "target_rate": 73.0},
+    )
+    assert conflict.status_code == 409, conflict.text
+    stale = client.put("/api/v1/dashboard/target", headers={
+        **auth, "Idempotency-Key": str(uuid4()),
+    }, json={**payload, "target_rate": 74.0})
+    assert stale.status_code == 409, stale.text
+    current = client.get("/api/v1/dashboard/target", headers=auth)
+    assert current.status_code == 200, current.text
+    assert current.json() == updated.json()
+    assert db.scalar(audit_query) == audit_before + 1
 
 
 def test_summary_endpoint_shape(client, dashboard_ready, demo_passwords):

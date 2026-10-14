@@ -1,16 +1,19 @@
 import { useEffect, useState } from "react";
-import { Card, Col, Row, Statistic, Table, Tag, Empty, Spin } from "antd";
+import { Alert, Card, Col, Row, Statistic, Table, Tag, Empty, Spin } from "antd";
 import type { TableColumnsType } from "antd";
 import type { EChartsOption } from "echarts";
 import { useNavigate } from "react-router-dom";
 import { EChart } from "../components/EChart";
 import { LIGHT_COLORS, CYAN } from "../theme";
+import { useAuth } from "../stores/auth";
 import {
   fetchSummary,
   fetchColleges,
   fetchTrend,
   fetchAlerts,
+  fetchMyCollegeSummary,
   type DashboardSummary,
+  type CollegeDashboardSummary,
   type CollegeRow,
   type TrendPoint,
   type AlertRow,
@@ -45,24 +48,55 @@ function LightPill({
 
 export function Dashboard() {
   const nav = useNavigate();
+  const role = useAuth((s) => s.me?.role);
+  const counselor = role === "counselor";
+  const schoolReader = role === "employment_office" || role === "leader_readonly";
+  const summaryReader = role === "admin" || schoolReader;
+  const alertReader = role === "employment_office" || counselor;
   const [summary, setSummary] = useState<DashboardSummary | null>(null);
+  const [collegeSummary, setCollegeSummary] = useState<CollegeDashboardSummary | null>(null);
   const [colleges, setColleges] = useState<CollegeRow[]>([]);
   const [trend, setTrend] = useState<TrendPoint[]>([]);
   const [alerts, setAlerts] = useState<AlertRow[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    Promise.all([fetchSummary(), fetchColleges(), fetchTrend(), fetchAlerts()])
-      .then(([s, c, t, a]) => {
+    if (!role) return;
+    let active = true;
+    setLoading(true);
+    setError(null);
+    setSummary(null);
+    setCollegeSummary(null);
+    setColleges([]);
+    setTrend([]);
+    setAlerts([]);
+    Promise.all([
+      summaryReader ? fetchSummary() : Promise.resolve(null),
+      schoolReader ? fetchColleges() : Promise.resolve([]),
+      schoolReader ? fetchTrend() : Promise.resolve([]),
+      alertReader ? fetchAlerts() : Promise.resolve([]),
+      counselor ? fetchMyCollegeSummary() : Promise.resolve(null),
+    ])
+      .then(([s, c, t, a, own]) => {
+        if (!active) return;
         setSummary(s);
         setColleges(c);
         setTrend(t);
         setAlerts(a);
+        setCollegeSummary(own);
       })
-      .finally(() => setLoading(false));
-  }, []);
+      .catch(() => {
+        if (active) setError("看板数据暂时无法加载，请稍后重试。");
+      })
+      .finally(() => {
+        if (active) setLoading(false);
+      });
+    return () => { active = false; };
+  }, [role, summaryReader, schoolReader, alertReader, counselor]);
 
   if (loading) return <Spin style={{ display: "block", margin: "120px auto" }} />;
+  if (error) return <Alert type="error" showIcon message={error} style={{ margin: 24 }} />;
 
   const trendOption: EChartsOption = {
     backgroundColor: "transparent",
@@ -127,9 +161,18 @@ export function Dashboard() {
 
   return (
     <div style={{ padding: 24 }}>
-      <h1 style={{ color: CYAN, marginBottom: 20 }}>就业预警驾驶舱</h1>
+      <h1 style={{ color: CYAN, marginBottom: 20 }}>
+        {counselor ? `${collegeSummary?.college_name ?? "本学院"}就业预警` : "就业预警驾驶舱"}
+      </h1>
 
-      <Row gutter={16}>
+      {counselor ? (
+        <Row gutter={16}>
+          <Col span={6}><Card><Statistic title="本院落实率" value={collegeSummary?.settlement_rate ?? 0} suffix="%" valueStyle={{ color: CYAN }} /></Card></Col>
+          <Col span={6}><Card><Statistic title="本院红色预警数" value={collegeSummary?.red_count ?? 0} valueStyle={{ color: LIGHT_COLORS.red }} /></Card></Col>
+          <Col span={6}><Card><Statistic title="本院黄色预警数" value={collegeSummary?.yellow_count ?? 0} valueStyle={{ color: LIGHT_COLORS.yellow }} /></Card></Col>
+          <Col span={6}><Card><Statistic title="近7日落实人数" value={collegeSummary?.recent_7d_settled_count ?? 0} valueStyle={{ color: CYAN }} /></Card></Col>
+        </Row>
+      ) : <Row gutter={16}>
         <Col span={6}>
           <Card>
             <Statistic title="全校落实率" value={summary?.settlement_rate ?? 0} suffix="%" valueStyle={{ color: CYAN }} />
@@ -150,9 +193,10 @@ export function Dashboard() {
             <Statistic title="本月活动数" value={summary?.recent_activities ?? 0} valueStyle={{ color: CYAN }} />
           </Card>
         </Col>
-      </Row>
+      </Row>}
 
-      <Row gutter={16} style={{ marginTop: 16 }}>
+      {(schoolReader || summary) && <Row gutter={16} style={{ marginTop: 16 }}>
+        {schoolReader &&
         <Col span={16}>
           <Card title="院系红绿灯">
             <Table
@@ -163,21 +207,21 @@ export function Dashboard() {
               dataSource={colleges}
             />
           </Card>
-        </Col>
-        <Col span={8}>
+        </Col>}
+        {summary && <Col span={schoolReader ? 8 : 24}>
           <Card title="去向结构">
             <EChart option={donutOption} height={300} />
           </Card>
-        </Col>
-      </Row>
+        </Col>}
+      </Row>}
 
-      <Row gutter={16} style={{ marginTop: 16 }}>
-        <Col span={16}>
+      {(schoolReader || alertReader) && <Row gutter={16} style={{ marginTop: 16 }}>
+        {schoolReader && <Col span={alertReader ? 16 : 24}>
           <Card title="求职签约趋势">
             <EChart option={trendOption} height={280} />
           </Card>
-        </Col>
-        <Col span={8}>
+        </Col>}
+        {alertReader && <Col span={schoolReader ? 8 : 24}>
           <Card title="预警动态流" styles={{ body: { maxHeight: 300, overflow: "auto" } }}>
             {alerts.length === 0 ? (
               <Empty />
@@ -206,8 +250,8 @@ export function Dashboard() {
               ))
             )}
           </Card>
-        </Col>
-      </Row>
+        </Col>}
+      </Row>}
     </div>
   );
 }

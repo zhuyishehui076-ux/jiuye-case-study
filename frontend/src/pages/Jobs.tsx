@@ -12,6 +12,7 @@ import {
   pushMatches,
   reviewJobParse,
   type MatchRow,
+  type MatchExportLanguage,
   type ReviewQueueItem,
 } from "../api/client";
 import { CYAN } from "../theme";
@@ -38,6 +39,21 @@ export function Jobs() {
   const [loading, setLoading] = useState(false);
   const [pasteForm] = Form.useForm();
   const [reviewForm] = Form.useForm();
+
+  const downloadMatches = async (language: MatchExportLanguage) => {
+    if (!jobId) return;
+    try {
+      const blob = await exportMatches(jobId, language);
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `job-${jobId}-matches-${language}.csv`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch {
+      message.error("名单导出失败，请稍后重试。");
+    }
+  };
 
   const loadReviewQueue = () => fetchReviewQueue().then((data) => {
     setReviewQueue(data);
@@ -241,18 +257,13 @@ export function Jobs() {
             确认直推
           </Button>
           <Button
-            onClick={async () => {
-              if (!jobId) return;
-              const blob = await exportMatches(jobId);
-              const url = URL.createObjectURL(blob);
-              const a = document.createElement("a");
-              a.href = url;
-              a.download = `job-${jobId}-matches.csv`;
-              a.click();
-              URL.revokeObjectURL(url);
-            }}
+            disabled={!jobId}
+            onClick={() => downloadMatches("zh")}
           >
-            导出名单
+            导出中文 CSV
+          </Button>
+          <Button disabled={!jobId} onClick={() => downloadMatches("en")}>
+            导出英文 CSV
           </Button>
         </Space>
         <Table rowKey="id" size="small" columns={matchCols} dataSource={matches} />

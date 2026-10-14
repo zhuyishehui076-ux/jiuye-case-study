@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
+from typing import Literal
 from uuid import uuid4
 
-from fastapi import APIRouter, Depends, File, Header, HTTPException, Response, UploadFile, status
+from fastapi import APIRouter, Depends, File, Header, HTTPException, Query, Response, UploadFile, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -533,6 +534,7 @@ def push_matches_endpoint(
 )
 def export_matches_endpoint(
     job_id: int,
+    header_language: Literal["zh", "en"] = Query(default="zh"),
     user: CurrentUser = Depends(get_current_user),
     db: Session = Depends(get_db),
 ) -> Response:
@@ -540,7 +542,7 @@ def export_matches_endpoint(
         raise HTTPException(status_code=404, detail="没有找到该岗位。")
     college_id = user.college_id if user.role is Role.COUNSELOR else None
     rows = list_matches_for_job(db, job_id, college_id=college_id, positive_only=True)
-    csv_text = export_matches_csv(rows)
+    csv_text = export_matches_csv(rows, header_language=header_language)
     record_db(
         db,
         actor=user.username,
@@ -553,6 +555,7 @@ def export_matches_endpoint(
         object_id=job_id,
         change_summary={
             "format": "csv",
+            "header_language": header_language,
             "row_count": len(rows),
             "college_scope": college_id,
         },
@@ -562,7 +565,7 @@ def export_matches_endpoint(
         content=csv_text,
         media_type="text/csv; charset=utf-8",
         headers={"Content-Disposition": chinese_attachment(
-            f"岗位{job_id}推荐学生名单.csv",
-            fallback=f"job-{job_id}.csv",
+            f"岗位{job_id}推荐学生名单.csv" if header_language == "zh" else f"job-{job_id}-matches-en.csv",
+            fallback=f"job-{job_id}.csv" if header_language == "zh" else f"job-{job_id}-matches-en.csv",
         )},
     )

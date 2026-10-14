@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import random
 import re
+from uuid import uuid4
 
 from sqlalchemy import func, select
 
@@ -427,7 +428,7 @@ def test_profile_rebuild_endpoint_and_counselor_scope(client, pg_engine, demo_pa
 
     rebuilt = client.post(
         "/api/v1/profiles/rebuild?term=2024-2025-1",
-        headers=office_headers,
+        headers={**office_headers, "Idempotency-Key": str(uuid4())},
     )
     assert rebuilt.status_code == 200, rebuilt.text
     assert rebuilt.json()["rebuilt"] == 2100

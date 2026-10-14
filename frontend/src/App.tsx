@@ -1,6 +1,6 @@
 import { type ReactNode, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate, useLocation, useNavigate } from "react-router-dom";
-import { ConfigProvider, Button, Layout, Space } from "antd";
+import { ConfigProvider, Button, Layout, Space, Spin } from "antd";
 import { appTheme, dashboardTheme, DASH_BG } from "./theme";
 import { Login } from "./pages/Login";
 import { Dashboard } from "./pages/Dashboard";
@@ -29,12 +29,19 @@ function AppRoute({ children }: { children: ReactNode }) {
   const nav = useNavigate();
   const location = useLocation();
   if (!token) return <Navigate to="/login" replace />;
+  if (!me) return <Spin style={{ display: "block", margin: "120px auto" }} />;
+  const staff = me.role === "employment_office" || me.role === "counselor";
   const navItems = [
     { path: "/dashboard", label: "驾驶舱" },
-    { path: "/profiles", label: "学生画像" },
-    { path: "/assist", label: "帮扶台账" },
-    { path: "/jobs", label: "岗位匹配" },
+    ...(staff ? [
+      { path: "/profiles", label: "学生画像" },
+      { path: "/assist", label: "帮扶台账" },
+      { path: "/jobs", label: "岗位匹配" },
+    ] : []),
   ];
+  if (!navItems.some((item) => item.path === location.pathname)) {
+    return <Navigate to="/dashboard" replace />;
+  }
   return (
     <ConfigProvider theme={dashboardTheme}>
       <Layout style={{ minHeight: "100vh", background: DASH_BG }}>
