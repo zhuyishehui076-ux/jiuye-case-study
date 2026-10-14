@@ -283,6 +283,15 @@ def test_job_entry_endpoints_cover_paste_xlsx_and_email_stub(client, t4_ready, d
     )
     assert pasted.status_code == 200, pasted.text
     assert pasted.json()["source"] == "表单"
+    # 先验证不依赖上传档位的分支；demo 上传限制仍以原成功断言暴露差异。
+    assert client.post("/api/v1/jobs/email-pull", headers=office_headers).status_code == 501
+    assert client.post("/api/v1/jobs/paste", headers={
+        **leader_headers, "Idempotency-Key": str(uuid4()),
+    }, json={
+        "company": "只读企业",
+        "title": "只读岗位",
+        "raw_text": "leader_readonly 不应可写",
+    }).status_code == 403
 
     wb = Workbook()
     ws = wb.active
@@ -304,14 +313,6 @@ def test_job_entry_endpoints_cover_paste_xlsx_and_email_stub(client, t4_ready, d
     )
     assert imported.status_code == 200, imported.text
     assert len(imported.json()) == 2
-    assert client.post("/api/v1/jobs/email-pull", headers=office_headers).status_code == 501
-    assert client.post("/api/v1/jobs/paste", headers={
-        **leader_headers, "Idempotency-Key": str(uuid4()),
-    }, json={
-        "company": "只读企业",
-        "title": "只读岗位",
-        "raw_text": "leader_readonly 不应可写",
-    }).status_code == 403
 
 
 def test_push_confirm_and_export_match_list(client, t4_ready, demo_passwords):

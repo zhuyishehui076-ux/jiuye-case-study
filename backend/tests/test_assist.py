@@ -38,7 +38,13 @@ def test_assist_record_append_only_and_no_delete_route(client, pg_engine, demo_p
 
     with SessionLocal() as s:
         reset_case_demo_seed(s)
-        case_id = s.execute(select(AssistCase.id).order_by(AssistCase.id).limit(1)).scalar_one()
+        # 使用尚无记录的模拟档案，避免把故事种子的既有记录计入两次追加。
+        case_id = s.execute(
+            select(AssistCase.id)
+            .where(~select(AssistRecord.id).where(AssistRecord.case_id == AssistCase.id).exists())
+            .order_by(AssistCase.id)
+            .limit(1)
+        ).scalar_one()
 
     token = login(client, "office", demo_passwords['office'])
     headers = {"Authorization": f"Bearer {token}"}
