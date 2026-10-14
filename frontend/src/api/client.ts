@@ -64,6 +64,15 @@ export interface CollegeRow {
   green: number;
   light: "red" | "yellow" | "green";
 }
+export interface CollegeDashboardSummary {
+  college_id: number;
+  college_name: string;
+  total_students: number;
+  settlement_rate: number;
+  red_count: number;
+  yellow_count: number;
+  recent_7d_settled_count: number;
+}
 export interface TrendPoint {
   month: string;
   signings: number;
@@ -87,6 +96,8 @@ export const fetchTrend = async () =>
   (await api.get<TrendPoint[]>("/dashboard/trend")).data;
 export const fetchAlerts = async () =>
   (await api.get<AlertRow[]>("/dashboard/alerts")).data;
+export const fetchMyCollegeSummary = async () =>
+  (await api.get<CollegeDashboardSummary>("/dashboard/my-college-summary")).data;
 
 // ---- T4 岗位解析与智能匹配（SPEC §6.4）----
 export interface JobRow {
@@ -167,8 +178,11 @@ export const fetchMatches = async (jobId: number) =>
 export const pushMatches = async (jobId: number) =>
   (await api.post<{ pushed: number }>(`/jobs/${jobId}/push`)).data;
 
-export const exportMatches = async (jobId: number) =>
-  (await api.get(`/jobs/${jobId}/export`, { responseType: "blob" })).data as Blob;
+export type MatchExportLanguage = "zh" | "en";
+export const exportMatches = async (jobId: number, headerLanguage: MatchExportLanguage = "zh") =>
+  (await api.get(`/jobs/${jobId}/export`, {
+    responseType: "blob", params: { header_language: headerLanguage },
+  })).data as Blob;
 
 // ---- T5 学生画像（SPEC §6.3）----
 export interface ProfileListItem {

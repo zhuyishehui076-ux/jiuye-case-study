@@ -7,7 +7,7 @@ import hashlib
 from datetime import UTC, date, datetime
 from decimal import Decimal
 from io import BytesIO, StringIO
-from typing import Any
+from typing import Any, Literal
 
 from openpyxl import load_workbook
 from sqlalchemy import func, select
@@ -593,11 +593,19 @@ def confirm_push_matches(
     }
 
 
-def export_matches_csv(rows: list[dict]) -> str:
+def export_matches_csv(
+    rows: list[dict], *, header_language: Literal["zh", "en"] = "zh"
+) -> str:
+    headers = {
+        "zh": ["学号", "姓名", "学院编号", "专业编号", "匹配度", "推荐理由"],
+        "en": ["student_no", "student_name", "college_id", "major_id", "score", "reason_text"],
+    }
+    if header_language not in headers:
+        raise ValueError("Unsupported CSV header language")
     out = StringIO()
     out.write("\ufeff")
     writer = csv.writer(out)
-    writer.writerow(["学号", "姓名", "学院编号", "专业编号", "匹配度", "推荐理由"])
+    writer.writerow(headers[header_language])
     for row in rows:
         writer.writerow([
             row["student_no"],

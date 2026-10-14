@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from io import BytesIO
+import csv
+from io import BytesIO, StringIO
 from types import SimpleNamespace
 from uuid import uuid4
 
@@ -367,9 +368,52 @@ def test_push_confirm_and_export_match_list(client, t4_ready, demo_passwords):
     exported = client.get(f"/api/v1/jobs/{job_id}/export", headers=headers)
     assert exported.status_code == 200
     assert "text/csv" in exported.headers["content-type"]
-    body = exported.text
-    assert "student_no,student_name,college_id,major_id,score,reason_text" in body
-    assert "专业代码" in body
+    assert exported.content.startswith(b"\xef\xbb\xbf")
+    default_rows = list(csv.reader(StringIO(exported.text.lstrip("\ufeff"))))
+    assert default_rows[0] == ["学号", "姓名", "学院编号", "专业编号", "匹配度", "推荐理由"]
+    assert len(default_rows) == 11
+    counselor = login(client, "counselor", demo_passwords["counselor"])
+    for language in ("zh", "en"):
+        response = client.get(
+            f"/api/v1/jobs/{job_id}/export?header_language={language}", headers=headers,
+        )
+        assert response.status_code == 200, response.text
+        assert "text/csv" in response.headers["content-type"]
+        assert response.content.startswith(b"\xef\xbb\xbf")
+        body = response.text
+        if language == "en":
+            assert "student_no,student_name,college_id,major_id,score,reason_text" in body
+            assert "matches-en.csv" in response.headers["content-disposition"]
+        assert "专业代码" in body
+        rows = list(csv.reader(StringIO(body.lstrip("\ufeff"))))
+        assert rows[1:] == default_rows[1:]
+        scoped = client.get(
+            f"/api/v1/jobs/{job_id}/export?header_language={language}",
+            headers={"Authorization": f"Bearer {counselor}"},
+        )
+        assert scoped.status_code == 200, scoped.text
+        scoped_rows = list(csv.reader(StringIO(scoped.text.lstrip("\ufeff"))))
+        assert scoped_rows[0] == rows[0]
+        assert scoped_rows[1:]
+        assert all(row[2] == "1" for row in scoped_rows[1:])
+        for user in ("admin", "leader"):
+            token = login(client, user, demo_passwords[user])
+            denied = client.get(
+                f"/api/v1/jobs/{job_id}/export?header_language={language}",
+                headers={"Authorization": f"Bearer {token}"},
+            )
+            assert denied.status_code == 403, denied.text
+    invalid = client.get(
+        f"/api/v1/jobs/{job_id}/export?header_language=unsupported", headers=headers,
+    )
+    assert invalid.status_code == 422, invalid.text
+    with SessionLocal() as s:
+        audits = list(s.scalars(select(AuditLog).where(
+            AuditLog.action == "job_match.export", AuditLog.object_id == str(job_id),
+        )))
+    assert len(audits) == 5
+    assert {row.change_summary["header_language"] for row in audits} == {"zh", "en"}
+    assert sum(row.change_summary["college_scope"] == 1 for row in audits) == 2
 
 
 def test_major_only_weights_with_no_major_hit_block_push(t4_ready, db):
