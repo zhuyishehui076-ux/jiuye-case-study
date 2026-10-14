@@ -2,10 +2,17 @@
 
 from __future__ import annotations
 
+import base64
+import json
 import os
 import re
 import secrets
+import subprocess
+import sys
+import tempfile
+from pathlib import Path
 from urllib.parse import unquote, urlsplit
+from uuid import uuid4
 
 import pytest
 
@@ -336,3 +343,134 @@ def login(client, username: str, password: str) -> str:
     )
     assert resp.status_code == 200, resp.text
     return resp.json()["access_token"]
+
+
+@pytest.fixture
+def production_import_probe(pg_engine):
+    """Own a new production-profile DB/role/namespace on the isolated CI server.
+
+    The main app remains demo. Separate processes load production settings from
+    an explicit environment, migrate only the newly created database and run
+    the real upload/auth/write boundaries as a non-superuser DB role.
+    """
+    from psycopg import sql
+    from sqlalchemy import create_engine
+
+    from app.core.config import settings
+    from app.db.session import SessionLocal
+
+    with SessionLocal() as db:
+        _validate_case_pg_session(db)
+    target = pg_engine.url
+    if (target.host, target.port, target.username) != ("postgres", 5432, "case_user"):
+        pytest.fail("Production probe requires the dedicated case Compose server", pytrace=False)
+
+    nonce = uuid4().hex
+    database_name = f"jiuye_case_prod_test_{nonce}"
+    runtime_role = f"case_prod_{nonce}"
+    installation_id = f"jiuye-case-production-test-{nonce}"
+    database_password = secrets.token_urlsafe(32)
+    database_created = role_created = False
+
+    def run_phase(phase, env, workbook=b""):
+        # No secrets in argv or diagnostic output; child failures expose only
+        # controlled stage labels/classes, not connection URLs or token bodies.
+        try:
+            result = subprocess.run(
+                [sys.executable, "-m", "tests.production_job_probe", phase],
+                cwd=Path(__file__).resolve().parents[1],
+                env=env,
+                input=base64.b64encode(workbook).decode(),
+                text=True,
+                capture_output=True,
+                timeout=55,
+                check=False,
+            )
+        except subprocess.TimeoutExpired:
+            pytest.fail(f"Production probe {phase} timed out", pytrace=False)
+        if result.returncode != 0:
+            # The worker emits this fixed prefix only; never relay raw errors.
+            safe = next((line for line in reversed(result.stderr.splitlines())
+                         if re.fullmatch(r"PRODUCTION_PROBE_FAILED:[A-Za-z0-9_.-]+", line)), "unreported")
+            pytest.fail(f"Production probe {phase} failed ({safe})", pytrace=False)
+        try:
+            return json.loads(result.stdout)
+        except (ValueError, TypeError):
+            pytest.fail("Production probe returned invalid evidence", pytrace=False)
+
+    try:
+        with pg_engine.connect().execution_options(isolation_level="AUTOCOMMIT") as conn:
+            raw = conn.connection.driver_connection
+            if raw.execute("SELECT EXISTS(SELECT 1 FROM pg_database WHERE datname=%s)",
+                           (database_name,)).fetchone()[0] or raw.execute(
+                               "SELECT EXISTS(SELECT 1 FROM pg_roles WHERE rolname=%s)",
+                               (runtime_role,)).fetchone()[0]:
+                pytest.fail("Production probe refuses existing resources", pytrace=False)
+            raw.execute(sql.SQL("CREATE ROLE {} LOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOINHERIT PASSWORD {}").format(
+                sql.Identifier(runtime_role), sql.Literal(database_password),
+            ))
+            role_created = True
+            raw.execute(sql.SQL("CREATE DATABASE {} TEMPLATE template0").format(sql.Identifier(database_name)))
+            database_created = True
+
+        with tempfile.TemporaryDirectory(prefix="jiuye-prod-import-probe-") as directory:
+            env = {key: os.environ[key] for key in ("PATH", "LANG", "LC_ALL", "LD_LIBRARY_PATH") if key in os.environ}
+            env.update({
+                "APP_PROFILE": "production", "DEPLOYMENT_MODE": "local",
+                "INSTALLATION_ID": installation_id,
+                "JWT_SECRET": secrets.token_urlsafe(32),
+                "FIELD_ENCRYPTION_KEY": secrets.token_urlsafe(32),
+                "UPLOAD_DIR": str(Path(directory) / "uploads"),
+                "ALLOWED_HOSTS": "testserver,localhost,127.0.0.1",
+                "PYTHONDONTWRITEBYTECODE": "1",
+                "JIUYE_PROD_PROBE_DATABASE": database_name,
+                "JIUYE_PROD_PROBE_ROLE": runtime_role,
+                "JIUYE_PROD_PROBE_OFFICE_PASSWORD": secrets.token_urlsafe(32),
+                "JIUYE_PROD_PROBE_LEADER_PASSWORD": secrets.token_urlsafe(32),
+            })
+            if len({database_password, env["JWT_SECRET"], env["FIELD_ENCRYPTION_KEY"]}) != 3:
+                pytest.fail("Production probe secrets must be independent", pytrace=False)
+            admin_url = target.set(database=database_name)
+            env["DATABASE_URL"] = admin_url.render_as_string(hide_password=False)
+            initialized = run_phase("initialize", env)
+            assert initialized == {"profile": "production", "initialized": True}
+            admin_engine = create_engine(admin_url, hide_parameters=True)
+            try:
+                with admin_engine.begin() as conn:
+                    raw = conn.connection.driver_connection
+                    raw.execute(sql.SQL("GRANT CONNECT ON DATABASE {} TO {}").format(
+                        sql.Identifier(database_name), sql.Identifier(runtime_role),
+                    ))
+                    for statement in (
+                        "GRANT USAGE ON SCHEMA public TO {}",
+                        "GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO {}",
+                        "GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO {}",
+                    ):
+                        raw.execute(sql.SQL(statement).format(sql.Identifier(runtime_role)))
+            finally:
+                admin_engine.dispose()
+            env["DATABASE_URL"] = target.set(
+                database=database_name, username=runtime_role, password=database_password,
+            ).render_as_string(hide_password=False)
+
+            def verify(workbook):
+                evidence = run_phase("verify", env, workbook)
+                with SessionLocal() as db:
+                    _validate_case_pg_session(db)  # Demo identity remains intact.
+                assert settings.profile.value == "demo"
+                return evidence
+
+            yield verify
+    finally:
+        # Delete only resources successfully created by this invocation. Never
+        # adopt existing names, force-disconnect sessions or drop other DBs.
+        with pg_engine.connect().execution_options(isolation_level="AUTOCOMMIT") as conn:
+            raw = conn.connection.driver_connection
+            if database_created:
+                owner = raw.execute("SELECT pg_get_userbyid(datdba) FROM pg_database WHERE datname=%s",
+                                    (database_name,)).fetchone()
+                if owner != (target.username,):
+                    pytest.fail("Production probe resource ownership changed", pytrace=False)
+                raw.execute(sql.SQL("DROP DATABASE {}").format(sql.Identifier(database_name)))
+            if role_created:
+                raw.execute(sql.SQL("DROP ROLE {}").format(sql.Identifier(runtime_role)))

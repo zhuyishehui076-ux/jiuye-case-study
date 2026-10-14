@@ -267,7 +267,9 @@ def test_counselor_match_list_is_limited_to_own_college(client, t4_ready, demo_p
     assert all(r["reason_text"] for r in office_rows)
 
 
-def test_job_entry_endpoints_cover_paste_xlsx_and_email_stub(client, t4_ready, demo_passwords):
+def test_job_entry_endpoints_cover_paste_xlsx_and_email_stub(
+    client, t4_ready, demo_passwords, production_import_probe,
+):
     office_token = login(client, "office", demo_passwords['office'])
     leader_token = login(client, "leader", demo_passwords['leader'])
     office_headers = {"Authorization": f"Bearer {office_token}"}
@@ -284,7 +286,7 @@ def test_job_entry_endpoints_cover_paste_xlsx_and_email_stub(client, t4_ready, d
     )
     assert pasted.status_code == 200, pasted.text
     assert pasted.json()["source"] == "表单"
-    # 先验证不依赖上传档位的分支；demo 上传限制仍以原成功断言暴露差异。
+    # Demo 与 production 分别在自己的库、身份和进程中验证真实边界。
     assert client.post("/api/v1/jobs/email-pull", headers=office_headers).status_code == 501
     assert client.post("/api/v1/jobs/paste", headers={
         **leader_headers, "Idempotency-Key": str(uuid4()),
@@ -301,7 +303,7 @@ def test_job_entry_endpoints_cover_paste_xlsx_and_email_stub(client, t4_ready, d
     ws.append(["批量企业B", "数据分析师", "本科，统计学相关专业，杭州，负责数据建模。"])
     buf = BytesIO()
     wb.save(buf)
-    imported = client.post(
+    rejected = client.post(
         "/api/v1/jobs/import-xlsx",
         headers={**office_headers, "Idempotency-Key": str(uuid4())},
         files={
@@ -312,8 +314,15 @@ def test_job_entry_endpoints_cover_paste_xlsx_and_email_stub(client, t4_ready, d
             )
         },
     )
-    assert imported.status_code == 200, imported.text
-    assert len(imported.json()) == 2
+    assert rejected.status_code == 403, rejected.text
+    imported = production_import_probe(buf.getvalue())
+    assert imported["profile"] == "production"
+    assert imported["status_code"] == 200
+    assert len(imported["rows"]) == 2
+    assert imported["persisted_count"] == 2
+    assert imported["replay_status_code"] == 200
+    assert imported["audit_count"] == 1
+    assert imported["runtime_superuser"] is False
 
 
 def test_push_confirm_and_export_match_list(client, t4_ready, demo_passwords):
